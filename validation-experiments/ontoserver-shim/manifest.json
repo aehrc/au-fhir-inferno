@@ -1,0 +1,68 @@
+{
+  "_comment": [
+    "The deliberate content set. verify-content.py DERIVES its allowlist from these",
+    "package tarballs, so this file names sources, never individual canonicals -- a",
+    "hand-written canonical list was wrong in both directions (it fired on",
+    "artifact-version-policy-codes, which legitimately ships inside extensions.r4, and",
+    "would have said nothing about a stray resource in any other namespace).",
+    "Both extensions.r4 versions are dependency-required: 5.2.0 by au.core 2.0.0 /",
+    "au.base 6.0.0 / au.ereq / ips 2.0.0, and 5.3.0 by au.core 3.0.0-ballot1 /",
+    "au.base 7.0.0-ballot1 / au.ps / ips 2.0.1.",
+    "hl7.fhir.r4.core is absent on purpose: Ontoserver resolves base R4 internally,",
+    "verified by validating a corpus file with the store empty of Patient/Observation SDs.",
+    "hl7.terminology.r4 and hl7.fhir.uv.xver-r5.r4 are absent on purpose: both are",
+    "declared dependencies but loading them whole re-inflates the terminology surface",
+    "the rig measures (THO ~1900 CodeSystems, xver 645). Their genuinely-needed pieces",
+    "come in via fixtures/ and cherry_picked below.",
+    "server_native_prefixes: canonicals Ontoserver ships or acquires with syndicated content rather than from any package (its own profiles, and the NCTS conformance profiles). Present on any Ontoserver, so allowlisted by prefix rather than listed.",
+    "ncts_bundle: 542 resources (346 VS, 147 CS, 49 CM) from NCTS syndication. Its canonicals are allowlisted via the healthterminologies.gov.au prefix.",
+    "codesystem-bcp13-mimetypes.json: urn:ietf:bcp:13, 1848 concepts, content=fragment. Copied from tx.dev.hl7.org.au (public IANA mime types) because the mimetypes ValueSet is an unbounded include of that system and it ships in NO THO release. Without it the wrapper arm rejects application/pdf and application/fhir+json as invalid."
+  ],
+  "packages": [
+    "hl7.fhir.r4.core#4.0.1",
+    "hl7.fhir.uv.extensions.r4#5.2.0",
+    "hl7.fhir.uv.extensions.r4#5.3.0",
+    "hl7.fhir.uv.smart-app-launch#2.2.0",
+    "hl7.fhir.uv.ipa#1.1.0",
+    "hl7.fhir.au.base#6.0.0",
+    "hl7.fhir.au.base#7.0.0-ballot1",
+    "hl7.fhir.au.core#2.0.0",
+    "hl7.fhir.au.core#3.0.0-ballot1",
+    "hl7.fhir.au.ps#1.0.0",
+    "hl7.fhir.au.ereq#1.0.0",
+    "hl7.fhir.uv.ips#2.0.0",
+    "hl7.fhir.uv.ips#2.0.1",
+    "ihe.formatcode.fhir#1.1.0"
+  ],
+  "cherry_picked": {
+    "hl7.fhir.uv.xver-r5.r4#0.1.0": {
+      "resourceType": "StructureDefinition",
+      "why": "18 of 4708 resources; the set is derived at load time by load-xver.py"
+    }
+  },
+  "fixtures": [
+    "fixtures/tho/coverage-selfpay-1-0-1.json",
+    "fixtures/tho/endpoint-connection-type-2-1-1.json",
+    "fixtures/tho/endpoint-payload-type-2-0-1.json",
+    "fixtures/tho/v2-0203-5-0-0.json",
+    "fixtures/tho/v2-0443-3-0-0.json",
+    "fixtures/codesystem-anzsic.json",
+    "fixtures/codesystem-atc.json",
+    "fixtures/codesystem-cvx.json",
+    "fixtures/codesystem-pbs.json",
+    "fixtures/codesystem-bcp13-mimetypes.json"
+  ],
+  "terminology": [
+    "http://snomed.info/sct",
+    "http://loinc.org"
+  ],
+  "server_native_prefixes": [
+    "http://ontoserver.csiro.au/",
+    "https://healthterminologies.gov.au/fhir/StructureDefinition/",
+    "http://hl7.org/fhir/StructureDefinition/shareable"
+  ],
+  "ncts_bundle": {
+    "version": "20260831",
+    "why": "AU national terminology via /api/addBundle; loaded whole because it IS the AU content"
+  }
+}

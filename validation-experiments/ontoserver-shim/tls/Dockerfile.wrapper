@@ -1,0 +1,17 @@
+# The baseline arm, with ONE change: the local tx server's self-signed cert trusted.
+#
+# CONSTRAINT: this image is Temurin 11 but its Dockerfile overrides Temurin's
+# __cacert_entrypoint.sh, so USE_SYSTEM_CA_CERTS=1 and a cert mounted at /certificates
+# do nothing -- the cert is never imported and every tx call dies with a PKIX path
+# failure. (That trick DOES work on markiantorno's image, which keeps the entrypoint.)
+# Importing into the JDK truststore at build time is the only reliable route here.
+#
+# Nothing about the validator itself is modified; the digest below is what
+# au-fhir-inferno runs in production.
+FROM ghcr.io/beda-software/validator-wrapper@sha256:0ade457e31b0f17246e55ac5005bcd63d1ed1d697945246d7732d6464b236426
+USER root
+COPY tx-tls.crt /tmp/tx-tls.crt
+RUN keytool -importcert -noprompt -trustcacerts -alias tx-tls \
+      -file /tmp/tx-tls.crt \
+      -keystore "$JAVA_HOME/lib/security/cacerts" -storepass changeit \
+    && rm /tmp/tx-tls.crt

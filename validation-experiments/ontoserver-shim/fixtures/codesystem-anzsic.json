@@ -1,0 +1,4787 @@
+{
+ "resourceType": "CodeSystem",
+ "id": "anzsic-2006-20130626",
+ "url": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0",
+ "identifier": [
+  {
+   "system": "urn:ietf:rfc:3986",
+   "value": "urn:oid:1.2.36.1.2001.1005.47"
+  }
+ ],
+ "version": "20130626",
+ "name": "AustralianandNewZealandStandardIndustrialClassificationANZSIC2006Revision2",
+ "title": "Australian and New Zealand Standard Industrial Classification (ANZSIC), 2006 (Revision 2.0)",
+ "status": "active",
+ "experimental": false,
+ "publisher": "Australian Digital Health Agency",
+ "description": "The Australian and New Zealand Standard Industrial Classification (ANZSIC) provides a basis for the standardised collection, analysis and dissemination of economic data on an industry basis for Australia and New Zealand. Full details can be found at https://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0. This CodeSystem resource represents the ANZSIC 2006 (Revision 2.0) release of the standard. The structure of the classification is represented through hierarchy.",
+ "copyright": "Copyright © 2021 Australian Digital Health Agency - All rights reserved. Except for the material identified below, this content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/. \n\nThis resource includes material that is based on Australian Bureau of Statistics data. \n\nAll copies of this resource must include this copyright statement and all information contained in this statement.",
+ "caseSensitive": false,
+ "content": "complete",
+ "count": 825,
+ "concept": [
+  {
+   "code": "A",
+   "display": "Agriculture, Forestry and Fishing",
+   "definition": "Agriculture, Forestry and Fishing",
+   "concept": [
+    {
+     "code": "01",
+     "display": "Agriculture",
+     "definition": "Agriculture",
+     "concept": [
+      {
+       "code": "011",
+       "display": "Nursery and Floriculture Production",
+       "definition": "Nursery and Floriculture Production",
+       "concept": [
+        {
+         "code": "0111",
+         "display": "Nursery Production (Under Cover)",
+         "definition": "Nursery Production (Under Cover)"
+        },
+        {
+         "code": "0112",
+         "display": "Nursery Production (Outdoors)",
+         "definition": "Nursery Production (Outdoors)"
+        },
+        {
+         "code": "0113",
+         "display": "Turf Growing",
+         "definition": "Turf Growing"
+        },
+        {
+         "code": "0114",
+         "display": "Floriculture Production (Under Cover)",
+         "definition": "Floriculture Production (Under Cover)"
+        },
+        {
+         "code": "0115",
+         "display": "Floriculture Production (Outdoors)",
+         "definition": "Floriculture Production (Outdoors)"
+        }
+       ]
+      },
+      {
+       "code": "012",
+       "display": "Mushroom and Vegetable Growing",
+       "definition": "Mushroom and Vegetable Growing",
+       "concept": [
+        {
+         "code": "0121",
+         "display": "Mushroom Growing",
+         "definition": "Mushroom Growing"
+        },
+        {
+         "code": "0122",
+         "display": "Vegetable Growing (Under Cover)",
+         "definition": "Vegetable Growing (Under Cover)"
+        },
+        {
+         "code": "0123",
+         "display": "Vegetable Growing (Outdoors)",
+         "definition": "Vegetable Growing (Outdoors)"
+        }
+       ]
+      },
+      {
+       "code": "013",
+       "display": "Fruit and Tree Nut Growing",
+       "definition": "Fruit and Tree Nut Growing",
+       "concept": [
+        {
+         "code": "0131",
+         "display": "Grape Growing",
+         "definition": "Grape Growing"
+        },
+        {
+         "code": "0132",
+         "display": "Kiwifruit Growing",
+         "definition": "Kiwifruit Growing"
+        },
+        {
+         "code": "0133",
+         "display": "Berry Fruit Growing",
+         "definition": "Berry Fruit Growing"
+        },
+        {
+         "code": "0134",
+         "display": "Apple and Pear Growing",
+         "definition": "Apple and Pear Growing"
+        },
+        {
+         "code": "0135",
+         "display": "Stone Fruit Growing",
+         "definition": "Stone Fruit Growing"
+        },
+        {
+         "code": "0136",
+         "display": "Citrus Fruit Growing",
+         "definition": "Citrus Fruit Growing"
+        },
+        {
+         "code": "0137",
+         "display": "Olive Growing",
+         "definition": "Olive Growing"
+        },
+        {
+         "code": "0139",
+         "display": "Other Fruit and Tree Nut Growing",
+         "definition": "Other Fruit and Tree Nut Growing"
+        }
+       ]
+      },
+      {
+       "code": "014",
+       "display": "Sheep, Beef Cattle and Grain Farming",
+       "definition": "Sheep, Beef Cattle and Grain Farming",
+       "concept": [
+        {
+         "code": "0141",
+         "display": "Sheep Farming (Specialised)",
+         "definition": "Sheep Farming (Specialised)"
+        },
+        {
+         "code": "0142",
+         "display": "Beef Cattle Farming (Specialised)",
+         "definition": "Beef Cattle Farming (Specialised)"
+        },
+        {
+         "code": "0143",
+         "display": "Beef Cattle Feedlots (Specialised)",
+         "definition": "Beef Cattle Feedlots (Specialised)"
+        },
+        {
+         "code": "0144",
+         "display": "Sheep-Beef Cattle Farming",
+         "definition": "Sheep-Beef Cattle Farming"
+        },
+        {
+         "code": "0145",
+         "display": "Grain-Sheep or Grain-Beef Cattle Farming",
+         "definition": "Grain-Sheep or Grain-Beef Cattle Farming"
+        },
+        {
+         "code": "0146",
+         "display": "Rice Growing",
+         "definition": "Rice Growing"
+        },
+        {
+         "code": "0149",
+         "display": "Other Grain Growing",
+         "definition": "Other Grain Growing"
+        }
+       ]
+      },
+      {
+       "code": "015",
+       "display": "Other Crop Growing",
+       "definition": "Other Crop Growing",
+       "concept": [
+        {
+         "code": "0151",
+         "display": "Sugar Cane Growing",
+         "definition": "Sugar Cane Growing"
+        },
+        {
+         "code": "0152",
+         "display": "Cotton Growing",
+         "definition": "Cotton Growing"
+        },
+        {
+         "code": "0159",
+         "display": "Other Crop Growing n.e.c.",
+         "definition": "Other Crop Growing n.e.c."
+        }
+       ]
+      },
+      {
+       "code": "016",
+       "display": "Dairy Cattle Farming",
+       "definition": "Dairy Cattle Farming",
+       "concept": [
+        {
+         "code": "0160",
+         "display": "Dairy Cattle Farming",
+         "definition": "Dairy Cattle Farming"
+        }
+       ]
+      },
+      {
+       "code": "017",
+       "display": "Poultry Farming",
+       "definition": "Poultry Farming",
+       "concept": [
+        {
+         "code": "0171",
+         "display": "Poultry Farming (Meat)",
+         "definition": "Poultry Farming (Meat)"
+        },
+        {
+         "code": "0172",
+         "display": "Poultry Farming (Eggs)",
+         "definition": "Poultry Farming (Eggs)"
+        }
+       ]
+      },
+      {
+       "code": "018",
+       "display": "Deer Farming",
+       "definition": "Deer Farming",
+       "concept": [
+        {
+         "code": "0180",
+         "display": "Deer Farming",
+         "definition": "Deer Farming"
+        }
+       ]
+      },
+      {
+       "code": "019",
+       "display": "Other Livestock Farming",
+       "definition": "Other Livestock Farming",
+       "concept": [
+        {
+         "code": "0191",
+         "display": "Horse Farming",
+         "definition": "Horse Farming"
+        },
+        {
+         "code": "0192",
+         "display": "Pig Farming",
+         "definition": "Pig Farming"
+        },
+        {
+         "code": "0193",
+         "display": "Beekeeping",
+         "definition": "Beekeeping"
+        },
+        {
+         "code": "0199",
+         "display": "Other Livestock Farming n.e.c.",
+         "definition": "Other Livestock Farming n.e.c."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "02",
+     "display": "Aquaculture",
+     "definition": "Aquaculture",
+     "concept": [
+      {
+       "code": "020",
+       "display": "Aquaculture",
+       "definition": "Aquaculture",
+       "concept": [
+        {
+         "code": "0201",
+         "display": "Offshore Longline and Rack Aquaculture",
+         "definition": "Offshore Longline and Rack Aquaculture"
+        },
+        {
+         "code": "0202",
+         "display": "Offshore Caged Aquaculture",
+         "definition": "Offshore Caged Aquaculture"
+        },
+        {
+         "code": "0203",
+         "display": "Onshore Aquaculture",
+         "definition": "Onshore Aquaculture"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "03",
+     "display": "Forestry and Logging",
+     "definition": "Forestry and Logging",
+     "concept": [
+      {
+       "code": "030",
+       "display": "Forestry and Logging",
+       "definition": "Forestry and Logging",
+       "concept": [
+        {
+         "code": "0301",
+         "display": "Forestry",
+         "definition": "Forestry"
+        },
+        {
+         "code": "0302",
+         "display": "Logging",
+         "definition": "Logging"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "04",
+     "display": "Fishing, Hunting and Trapping",
+     "definition": "Fishing, Hunting and Trapping",
+     "concept": [
+      {
+       "code": "041",
+       "display": "Fishing",
+       "definition": "Fishing",
+       "concept": [
+        {
+         "code": "0411",
+         "display": "Rock Lobster and Crab Potting",
+         "definition": "Rock Lobster and Crab Potting"
+        },
+        {
+         "code": "0412",
+         "display": "Prawn Fishing",
+         "definition": "Prawn Fishing"
+        },
+        {
+         "code": "0413",
+         "display": "Line Fishing",
+         "definition": "Line Fishing"
+        },
+        {
+         "code": "0414",
+         "display": "Fish Trawling, Seining and Netting",
+         "definition": "Fish Trawling, Seining and Netting"
+        },
+        {
+         "code": "0419",
+         "display": "Other Fishing",
+         "definition": "Other Fishing"
+        }
+       ]
+      },
+      {
+       "code": "042",
+       "display": "Hunting and Trapping",
+       "definition": "Hunting and Trapping",
+       "concept": [
+        {
+         "code": "0420",
+         "display": "Hunting and Trapping",
+         "definition": "Hunting and Trapping"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "05",
+     "display": "Agriculture, Forestry and Fishing Support Services",
+     "definition": "Agriculture, Forestry and Fishing Support Services",
+     "concept": [
+      {
+       "code": "051",
+       "display": "Forestry Support Services",
+       "definition": "Forestry Support Services",
+       "concept": [
+        {
+         "code": "0510",
+         "display": "Forestry Support Services",
+         "definition": "Forestry Support Services"
+        }
+       ]
+      },
+      {
+       "code": "052",
+       "display": "Agriculture and Fishing Support Services",
+       "definition": "Agriculture and Fishing Support Services",
+       "concept": [
+        {
+         "code": "0521",
+         "display": "Cotton Ginning",
+         "definition": "Cotton Ginning"
+        },
+        {
+         "code": "0522",
+         "display": "Shearing Services",
+         "definition": "Shearing Services"
+        },
+        {
+         "code": "0529",
+         "display": "Other Agriculture and Fishing Support Services",
+         "definition": "Other Agriculture and Fishing Support Services"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "display": "Mining",
+   "definition": "Mining",
+   "concept": [
+    {
+     "code": "06",
+     "display": "Coal Mining",
+     "definition": "Coal Mining",
+     "concept": [
+      {
+       "code": "060",
+       "display": "Coal Mining",
+       "definition": "Coal Mining",
+       "concept": [
+        {
+         "code": "0600",
+         "display": "Coal Mining",
+         "definition": "Coal Mining"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "07",
+     "display": "Oil and Gas Extraction",
+     "definition": "Oil and Gas Extraction",
+     "concept": [
+      {
+       "code": "070",
+       "display": "Oil and Gas Extraction",
+       "definition": "Oil and Gas Extraction",
+       "concept": [
+        {
+         "code": "0700",
+         "display": "Oil and Gas Extraction",
+         "definition": "Oil and Gas Extraction"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "08",
+     "display": "Metal Ore Mining",
+     "definition": "Metal Ore Mining",
+     "concept": [
+      {
+       "code": "080",
+       "display": "Metal Ore Mining",
+       "definition": "Metal Ore Mining",
+       "concept": [
+        {
+         "code": "0801",
+         "display": "Iron Ore Mining",
+         "definition": "Iron Ore Mining"
+        },
+        {
+         "code": "0802",
+         "display": "Bauxite Mining",
+         "definition": "Bauxite Mining"
+        },
+        {
+         "code": "0803",
+         "display": "Copper Ore Mining",
+         "definition": "Copper Ore Mining"
+        },
+        {
+         "code": "0804",
+         "display": "Gold Ore Mining",
+         "definition": "Gold Ore Mining"
+        },
+        {
+         "code": "0805",
+         "display": "Mineral Sand Mining",
+         "definition": "Mineral Sand Mining"
+        },
+        {
+         "code": "0806",
+         "display": "Nickel Ore Mining",
+         "definition": "Nickel Ore Mining"
+        },
+        {
+         "code": "0807",
+         "display": "Silver-Lead-Zinc Ore Mining",
+         "definition": "Silver-Lead-Zinc Ore Mining"
+        },
+        {
+         "code": "0809",
+         "display": "Other Metal Ore Mining",
+         "definition": "Other Metal Ore Mining"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "09",
+     "display": "Non-Metallic Mineral Mining and Quarrying",
+     "definition": "Non-Metallic Mineral Mining and Quarrying",
+     "concept": [
+      {
+       "code": "091",
+       "display": "Construction Material Mining",
+       "definition": "Construction Material Mining",
+       "concept": [
+        {
+         "code": "0911",
+         "display": "Gravel and Sand Quarrying",
+         "definition": "Gravel and Sand Quarrying"
+        },
+        {
+         "code": "0919",
+         "display": "Other Construction Material Mining",
+         "definition": "Other Construction Material Mining"
+        }
+       ]
+      },
+      {
+       "code": "099",
+       "display": "Other Non-Metallic Mineral Mining and Quarrying",
+       "definition": "Other Non-Metallic Mineral Mining and Quarrying",
+       "concept": [
+        {
+         "code": "0990",
+         "display": "Other Non-Metallic Mineral Mining and Quarrying",
+         "definition": "Other Non-Metallic Mineral Mining and Quarrying"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "10",
+     "display": "Exploration and Other Mining Support Services",
+     "definition": "Exploration and Other Mining Support Services",
+     "concept": [
+      {
+       "code": "101",
+       "display": "Exploration",
+       "definition": "Exploration",
+       "concept": [
+        {
+         "code": "1011",
+         "display": "Petroleum Exploration",
+         "definition": "Petroleum Exploration"
+        },
+        {
+         "code": "1012",
+         "display": "Mineral Exploration",
+         "definition": "Mineral Exploration"
+        }
+       ]
+      },
+      {
+       "code": "109",
+       "display": "Other Mining Support Services",
+       "definition": "Other Mining Support Services",
+       "concept": [
+        {
+         "code": "1090",
+         "display": "Other Mining Support Services",
+         "definition": "Other Mining Support Services"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "C",
+   "display": "Manufacturing",
+   "definition": "Manufacturing",
+   "concept": [
+    {
+     "code": "11",
+     "display": "Food Product Manufacturing",
+     "definition": "Food Product Manufacturing",
+     "concept": [
+      {
+       "code": "111",
+       "display": "Meat and Meat Product Manufacturing",
+       "definition": "Meat and Meat Product Manufacturing",
+       "concept": [
+        {
+         "code": "1111",
+         "display": "Meat Processing",
+         "definition": "Meat Processing"
+        },
+        {
+         "code": "1112",
+         "display": "Poultry Processing",
+         "definition": "Poultry Processing"
+        },
+        {
+         "code": "1113",
+         "display": "Cured Meat and Smallgoods Manufacturing",
+         "definition": "Cured Meat and Smallgoods Manufacturing"
+        }
+       ]
+      },
+      {
+       "code": "112",
+       "display": "Seafood Processing",
+       "definition": "Seafood Processing",
+       "concept": [
+        {
+         "code": "1120",
+         "display": "Seafood Processing",
+         "definition": "Seafood Processing"
+        }
+       ]
+      },
+      {
+       "code": "113",
+       "display": "Dairy Product Manufacturing",
+       "definition": "Dairy Product Manufacturing",
+       "concept": [
+        {
+         "code": "1131",
+         "display": "Milk and Cream Processing",
+         "definition": "Milk and Cream Processing"
+        },
+        {
+         "code": "1132",
+         "display": "Ice Cream Manufacturing",
+         "definition": "Ice Cream Manufacturing"
+        },
+        {
+         "code": "1133",
+         "display": "Cheese and Other Dairy Product Manufacturing",
+         "definition": "Cheese and Other Dairy Product Manufacturing"
+        }
+       ]
+      },
+      {
+       "code": "114",
+       "display": "Fruit and Vegetable Processing",
+       "definition": "Fruit and Vegetable Processing",
+       "concept": [
+        {
+         "code": "1140",
+         "display": "Fruit and Vegetable Processing",
+         "definition": "Fruit and Vegetable Processing"
+        }
+       ]
+      },
+      {
+       "code": "115",
+       "display": "Oil and Fat Manufacturing",
+       "definition": "Oil and Fat Manufacturing",
+       "concept": [
+        {
+         "code": "1150",
+         "display": "Oil and Fat Manufacturing",
+         "definition": "Oil and Fat Manufacturing"
+        }
+       ]
+      },
+      {
+       "code": "116",
+       "display": "Grain Mill and Cereal Product Manufacturing",
+       "definition": "Grain Mill and Cereal Product Manufacturing",
+       "concept": [
+        {
+         "code": "1161",
+         "display": "Grain Mill Product Manufacturing",
+         "definition": "Grain Mill Product Manufacturing"
+        },
+        {
+         "code": "1162",
+         "display": "Cereal, Pasta and Baking Mix Manufacturing",
+         "definition": "Cereal, Pasta and Baking Mix Manufacturing"
+        }
+       ]
+      },
+      {
+       "code": "117",
+       "display": "Bakery Product Manufacturing",
+       "definition": "Bakery Product Manufacturing",
+       "concept": [
+        {
+         "code": "1171",
+         "display": "Bread Manufacturing (Factory based)",
+         "definition": "Bread Manufacturing (Factory based)"
+        },
+        {
+         "code": "1172",
+         "display": "Cake and Pastry Manufacturing (Factory based)",
+         "definition": "Cake and Pastry Manufacturing (Factory based)"
+        },
+        {
+         "code": "1173",
+         "display": "Biscuit Manufacturing (Factory based)",
+         "definition": "Biscuit Manufacturing (Factory based)"
+        },
+        {
+         "code": "1174",
+         "display": "Bakery Product Manufacturing (Non-factory based)",
+         "definition": "Bakery Product Manufacturing (Non-factory based)"
+        }
+       ]
+      },
+      {
+       "code": "118",
+       "display": "Sugar and Confectionery Manufacturing",
+       "definition": "Sugar and Confectionery Manufacturing",
+       "concept": [
+        {
+         "code": "1181",
+         "display": "Sugar Manufacturing",
+         "definition": "Sugar Manufacturing"
+        },
+        {
+         "code": "1182",
+         "display": "Confectionery Manufacturing",
+         "definition": "Confectionery Manufacturing"
+        }
+       ]
+      },
+      {
+       "code": "119",
+       "display": "Other Food Product Manufacturing",
+       "definition": "Other Food Product Manufacturing",
+       "concept": [
+        {
+         "code": "1191",
+         "display": "Potato, Corn and Other Crisp Manufacturing",
+         "definition": "Potato, Corn and Other Crisp Manufacturing"
+        },
+        {
+         "code": "1192",
+         "display": "Prepared Animal and Bird Feed Manufacturing",
+         "definition": "Prepared Animal and Bird Feed Manufacturing"
+        },
+        {
+         "code": "1199",
+         "display": "Other Food Product Manufacturing n.e.c.",
+         "definition": "Other Food Product Manufacturing n.e.c."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "12",
+     "display": "Beverage and Tobacco Product Manufacturing",
+     "definition": "Beverage and Tobacco Product Manufacturing",
+     "concept": [
+      {
+       "code": "121",
+       "display": "Beverage Manufacturing",
+       "definition": "Beverage Manufacturing",
+       "concept": [
+        {
+         "code": "1211",
+         "display": "Soft Drink, Cordial and Syrup Manufacturing",
+         "definition": "Soft Drink, Cordial and Syrup Manufacturing"
+        },
+        {
+         "code": "1212",
+         "display": "Beer Manufacturing",
+         "definition": "Beer Manufacturing"
+        },
+        {
+         "code": "1213",
+         "display": "Spirit Manufacturing",
+         "definition": "Spirit Manufacturing"
+        },
+        {
+         "code": "1214",
+         "display": "Wine and Other Alcoholic Beverage Manufacturing",
+         "definition": "Wine and Other Alcoholic Beverage Manufacturing"
+        }
+       ]
+      },
+      {
+       "code": "122",
+       "display": "Cigarette and Tobacco Product Manufacturing",
+       "definition": "Cigarette and Tobacco Product Manufacturing",
+       "concept": [
+        {
+         "code": "1220",
+         "display": "Cigarette and Tobacco Product Manufacturing",
+         "definition": "Cigarette and Tobacco Product Manufacturing"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "13",
+     "display": "Textile, Leather, Clothing and Footwear Manufacturing",
+     "definition": "Textile, Leather, Clothing and Footwear Manufacturing",
+     "concept": [
+      {
+       "code": "131",
+       "display": "Textile Manufacturing",
+       "definition": "Textile Manufacturing",
+       "concept": [
+        {
+         "code": "1311",
+         "display": "Wool Scouring",
+         "definition": "Wool Scouring"
+        },
+        {
+         "code": "1312",
+         "display": "Natural Textile Manufacturing",
+         "definition": "Natural Textile Manufacturing"
+        },
+        {
+         "code": "1313",
+         "display": "Synthetic Textile Manufacturing",
+         "definition": "Synthetic Textile Manufacturing"
+        }
+       ]
+      },
+      {
+       "code": "132",
+       "display": "Leather Tanning, Fur Dressing and Leather Product Manufacturing",
+       "definition": "Leather Tanning, Fur Dressing and Leather Product Manufacturing",
+       "concept": [
+        {
+         "code": "1320",
+         "display": "Leather Tanning, Fur Dressing and Leather Product Manufacturing",
+         "definition": "Leather Tanning, Fur Dressing and Leather Product Manufacturing"
+        }
+       ]
+      },
+      {
+       "code": "133",
+       "display": "Textile Product Manufacturing",
+       "definition": "Textile Product Manufacturing",
+       "concept": [
+        {
+         "code": "1331",
+         "display": "Textile Floor Covering Manufacturing",
+         "definition": "Textile Floor Covering Manufacturing"
+        },
+        {
+         "code": "1332",
+         "display": "Rope, Cordage and Twine Manufacturing",
+         "definition": "Rope, Cordage and Twine Manufacturing"
+        },
+        {
+         "code": "1333",
+         "display": "Cut and Sewn Textile Product Manufacturing",
+         "definition": "Cut and Sewn Textile Product Manufacturing"
+        },
+        {
+         "code": "1334",
+         "display": "Textile Finishing and Other Textile Product Manufacturing",
+         "definition": "Textile Finishing and Other Textile Product Manufacturing"
+        }
+       ]
+      },
+      {
+       "code": "134",
+       "display": "Knitted Product Manufacturing",
+       "definition": "Knitted Product Manufacturing",
+       "concept": [
+        {
+         "code": "1340",
+         "display": "Knitted Product Manufacturing",
+         "definition": "Knitted Product Manufacturing"
+        }
+       ]
+      },
+      {
+       "code": "135",
+       "display": "Clothing and Footwear Manufacturing",
+       "definition": "Clothing and Footwear Manufacturing",
+       "concept": [
+        {
+         "code": "1351",
+         "display": "Clothing Manufacturing",
+         "definition": "Clothing Manufacturing"
+        },
+        {
+         "code": "1352",
+         "display": "Footwear Manufacturing",
+         "definition": "Footwear Manufacturing"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "14",
+     "display": "Wood Product Manufacturing",
+     "definition": "Wood Product Manufacturing",
+     "concept": [
+      {
+       "code": "141",
+       "display": "Log Sawmilling and Timber Dressing",
+       "definition": "Log Sawmilling and Timber Dressing",
+       "concept": [
+        {
+         "code": "1411",
+         "display": "Log Sawmilling",
+         "definition": "Log Sawmilling"
+        },
+        {
+         "code": "1412",
+         "display": "Wood Chipping",
+         "definition": "Wood Chipping"
+        },
+        {
+         "code": "1413",
+         "display": "Timber Resawing and Dressing",
+         "definition": "Timber Resawing and Dressing"
+        }
+       ]
+      },
+      {
+       "code": "149",
+       "display": "Other Wood Product Manufacturing",
+       "definition": "Other Wood Product Manufacturing",
+       "concept": [
+        {
+         "code": "1491",
+         "display": "Prefabricated Wooden Building Manufacturing",
+         "definition": "Prefabricated Wooden Building Manufacturing"
+        },
+        {
+         "code": "1492",
+         "display": "Wooden Structural Fitting and Component Manufacturing",
+         "definition": "Wooden Structural Fitting and Component Manufacturing"
+        },
+        {
+         "code": "1493",
+         "display": "Veneer and Plywood Manufacturing",
+         "definition": "Veneer and Plywood Manufacturing"
+        },
+        {
+         "code": "1494",
+         "display": "Reconstituted Wood Product Manufacturing",
+         "definition": "Reconstituted Wood Product Manufacturing"
+        },
+        {
+         "code": "1499",
+         "display": "Other Wood Product Manufacturing n.e.c.",
+         "definition": "Other Wood Product Manufacturing n.e.c."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "15",
+     "display": "Pulp, Paper and Converted Paper Product Manufacturing",
+     "definition": "Pulp, Paper and Converted Paper Product Manufacturing",
+     "concept": [
+      {
+       "code": "151",
+       "display": "Pulp, Paper and Paperboard Manufacturing",
+       "definition": "Pulp, Paper and Paperboard Manufacturing",
+       "concept": [
+        {
+         "code": "1510",
+         "display": "Pulp, Paper and Paperboard Manufacturing",
+         "definition": "Pulp, Paper and Paperboard Manufacturing"
+        }
+       ]
+      },
+      {
+       "code": "152",
+       "display": "Converted Paper Product Manufacturing",
+       "definition": "Converted Paper Product Manufacturing",
+       "concept": [
+        {
+         "code": "1521",
+         "display": "Corrugated Paperboard and Paperboard Container Manufacturing",
+         "definition": "Corrugated Paperboard and Paperboard Container Manufacturing"
+        },
+        {
+         "code": "1522",
+         "display": "Paper Bag Manufacturing",
+         "definition": "Paper Bag Manufacturing"
+        },
+        {
+         "code": "1523",
+         "display": "Paper Stationery Manufacturing",
+         "definition": "Paper Stationery Manufacturing"
+        },
+        {
+         "code": "1524",
+         "display": "Sanitary Paper Product Manufacturing",
+         "definition": "Sanitary Paper Product Manufacturing"
+        },
+        {
+         "code": "1529",
+         "display": "Other Converted Paper Product Manufacturing",
+         "definition": "Other Converted Paper Product Manufacturing"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "16",
+     "display": "Printing (including the Reproduction of Recorded Media)",
+     "definition": "Printing (including the Reproduction of Recorded Media)",
+     "concept": [
+      {
+       "code": "161",
+       "display": "Printing and Printing Support Services",
+       "definition": "Printing and Printing Support Services",
+       "concept": [
+        {
+         "code": "1611",
+         "display": "Printing",
+         "definition": "Printing"
+        },
+        {
+         "code": "1612",
+         "display": "Printing Support Services",
+         "definition": "Printing Support Services"
+        }
+       ]
+      },
+      {
+       "code": "162",
+       "display": "Reproduction of Recorded Media",
+       "definition": "Reproduction of Recorded Media",
+       "concept": [
+        {
+         "code": "1620",
+         "display": "Reproduction of Recorded Media",
+         "definition": "Reproduction of Recorded Media"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "17",
+     "display": "Petroleum and Coal Product Manufacturing",
+     "definition": "Petroleum and Coal Product Manufacturing",
+     "concept": [
+      {
+       "code": "170",
+       "display": "Petroleum and Coal Product Manufacturing",
+       "definition": "Petroleum and Coal Product Manufacturing",
+       "concept": [
+        {
+         "code": "1701",
+         "display": "Petroleum Refining and Petroleum Fuel Manufacturing",
+         "definition": "Petroleum Refining and Petroleum Fuel Manufacturing"
+        },
+        {
+         "code": "1709",
+         "display": "Other Petroleum and Coal Product Manufacturing",
+         "definition": "Other Petroleum and Coal Product Manufacturing"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "18",
+     "display": "Basic Chemical and Chemical Product Manufacturing",
+     "definition": "Basic Chemical and Chemical Product Manufacturing",
+     "concept": [
+      {
+       "code": "181",
+       "display": "Basic Chemical Manufacturing",
+       "definition": "Basic Chemical Manufacturing",
+       "concept": [
+        {
+         "code": "1811",
+         "display": "Industrial Gas Manufacturing",
+         "definition": "Industrial Gas Manufacturing"
+        },
+        {
+         "code": "1812",
+         "display": "Basic Organic Chemical Manufacturing",
+         "definition": "Basic Organic Chemical Manufacturing"
+        },
+        {
+         "code": "1813",
+         "display": "Basic Inorganic Chemical Manufacturing",
+         "definition": "Basic Inorganic Chemical Manufacturing"
+        }
+       ]
+      },
+      {
+       "code": "182",
+       "display": "Basic Polymer Manufacturing",
+       "definition": "Basic Polymer Manufacturing",
+       "concept": [
+        {
+         "code": "1821",
+         "display": "Synthetic Resin and Synthetic Rubber Manufacturing",
+         "definition": "Synthetic Resin and Synthetic Rubber Manufacturing"
+        },
+        {
+         "code": "1829",
+         "display": "Other Basic Polymer Manufacturing",
+         "definition": "Other Basic Polymer Manufacturing"
+        }
+       ]
+      },
+      {
+       "code": "183",
+       "display": "Fertiliser and Pesticide Manufacturing",
+       "definition": "Fertiliser and Pesticide Manufacturing",
+       "concept": [
+        {
+         "code": "1831",
+         "display": "Fertiliser Manufacturing",
+         "definition": "Fertiliser Manufacturing"
+        },
+        {
+         "code": "1832",
+         "display": "Pesticide Manufacturing",
+         "definition": "Pesticide Manufacturing"
+        }
+       ]
+      },
+      {
+       "code": "184",
+       "display": "Pharmaceutical and Medicinal Product Manufacturing",
+       "definition": "Pharmaceutical and Medicinal Product Manufacturing",
+       "concept": [
+        {
+         "code": "1841",
+         "display": "Human Pharmaceutical and Medicinal Product Manufacturing",
+         "definition": "Human Pharmaceutical and Medicinal Product Manufacturing"
+        },
+        {
+         "code": "1842",
+         "display": "Veterinary Pharmaceutical and Medicinal Product Manufacturing",
+         "definition": "Veterinary Pharmaceutical and Medicinal Product Manufacturing"
+        }
+       ]
+      },
+      {
+       "code": "185",
+       "display": "Cleaning Compound and Toiletry Preparation Manufacturing",
+       "definition": "Cleaning Compound and Toiletry Preparation Manufacturing",
+       "concept": [
+        {
+         "code": "1851",
+         "display": "Cleaning Compound Manufacturing",
+         "definition": "Cleaning Compound Manufacturing"
+        },
+        {
+         "code": "1852",
+         "display": "Cosmetic and Toiletry Preparation Manufacturing",
+         "definition": "Cosmetic and Toiletry Preparation Manufacturing"
+        }
+       ]
+      },
+      {
+       "code": "189",
+       "display": "Other Basic Chemical Product Manufacturing",
+       "definition": "Other Basic Chemical Product Manufacturing",
+       "concept": [
+        {
+         "code": "1891",
+         "display": "Photographic Chemical Product Manufacturing",
+         "definition": "Photographic Chemical Product Manufacturing"
+        },
+        {
+         "code": "1892",
+         "display": "Explosive Manufacturing",
+         "definition": "Explosive Manufacturing"
+        },
+        {
+         "code": "1899",
+         "display": "Other Basic Chemical Product Manufacturing n.e.c.",
+         "definition": "Other Basic Chemical Product Manufacturing n.e.c."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "19",
+     "display": "Polymer Product and Rubber Product Manufacturing",
+     "definition": "Polymer Product and Rubber Product Manufacturing",
+     "concept": [
+      {
+       "code": "191",
+       "display": "Polymer Product Manufacturing",
+       "definition": "Polymer Product Manufacturing",
+       "concept": [
+        {
+         "code": "1911",
+         "display": "Polymer Film and Sheet Packaging Material Manufacturing",
+         "definition": "Polymer Film and Sheet Packaging Material Manufacturing"
+        },
+        {
+         "code": "1912",
+         "display": "Rigid and Semi-Rigid Polymer Product Manufacturing",
+         "definition": "Rigid and Semi-Rigid Polymer Product Manufacturing"
+        },
+        {
+         "code": "1913",
+         "display": "Polymer Foam Product Manufacturing",
+         "definition": "Polymer Foam Product Manufacturing"
+        },
+        {
+         "code": "1914",
+         "display": "Tyre Manufacturing",
+         "definition": "Tyre Manufacturing"
+        },
+        {
+         "code": "1915",
+         "display": "Adhesive Manufacturing",
+         "definition": "Adhesive Manufacturing"
+        },
+        {
+         "code": "1916",
+         "display": "Paint and Coatings Manufacturing",
+         "definition": "Paint and Coatings Manufacturing"
+        },
+        {
+         "code": "1919",
+         "display": "Other Polymer Product Manufacturing",
+         "definition": "Other Polymer Product Manufacturing"
+        }
+       ]
+      },
+      {
+       "code": "192",
+       "display": "Natural Rubber Product Manufacturing",
+       "definition": "Natural Rubber Product Manufacturing",
+       "concept": [
+        {
+         "code": "1920",
+         "display": "Natural Rubber Product Manufacturing",
+         "definition": "Natural Rubber Product Manufacturing"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "20",
+     "display": "Non-Metallic Mineral Product Manufacturing",
+     "definition": "Non-Metallic Mineral Product Manufacturing",
+     "concept": [
+      {
+       "code": "201",
+       "display": "Glass and Glass Product Manufacturing",
+       "definition": "Glass and Glass Product Manufacturing",
+       "concept": [
+        {
+         "code": "2010",
+         "display": "Glass and Glass Product Manufacturing",
+         "definition": "Glass and Glass Product Manufacturing"
+        }
+       ]
+      },
+      {
+       "code": "202",
+       "display": "Ceramic Product Manufacturing",
+       "definition": "Ceramic Product Manufacturing",
+       "concept": [
+        {
+         "code": "2021",
+         "display": "Clay Brick Manufacturing",
+         "definition": "Clay Brick Manufacturing"
+        },
+        {
+         "code": "2029",
+         "display": "Other Ceramic Product Manufacturing",
+         "definition": "Other Ceramic Product Manufacturing"
+        }
+       ]
+      },
+      {
+       "code": "203",
+       "display": "Cement, Lime, Plaster and Concrete Product Manufacturing",
+       "definition": "Cement, Lime, Plaster and Concrete Product Manufacturing",
+       "concept": [
+        {
+         "code": "2031",
+         "display": "Cement and Lime Manufacturing",
+         "definition": "Cement and Lime Manufacturing"
+        },
+        {
+         "code": "2032",
+         "display": "Plaster Product Manufacturing",
+         "definition": "Plaster Product Manufacturing"
+        },
+        {
+         "code": "2033",
+         "display": "Ready-Mixed Concrete Manufacturing",
+         "definition": "Ready-Mixed Concrete Manufacturing"
+        },
+        {
+         "code": "2034",
+         "display": "Concrete Product Manufacturing",
+         "definition": "Concrete Product Manufacturing"
+        }
+       ]
+      },
+      {
+       "code": "209",
+       "display": "Other Non-Metallic Mineral Product Manufacturing",
+       "definition": "Other Non-Metallic Mineral Product Manufacturing",
+       "concept": [
+        {
+         "code": "2090",
+         "display": "Other Non-Metallic Mineral Product Manufacturing",
+         "definition": "Other Non-Metallic Mineral Product Manufacturing"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "21",
+     "display": "Primary Metal and Metal Product Manufacturing",
+     "definition": "Primary Metal and Metal Product Manufacturing",
+     "concept": [
+      {
+       "code": "211",
+       "display": "Basic Ferrous Metal Manufacturing",
+       "definition": "Basic Ferrous Metal Manufacturing",
+       "concept": [
+        {
+         "code": "2110",
+         "display": "Iron Smelting and Steel Manufacturing",
+         "definition": "Iron Smelting and Steel Manufacturing"
+        }
+       ]
+      },
+      {
+       "code": "212",
+       "display": "Basic Ferrous Metal Product Manufacturing",
+       "definition": "Basic Ferrous Metal Product Manufacturing",
+       "concept": [
+        {
+         "code": "2121",
+         "display": "Iron and Steel Casting",
+         "definition": "Iron and Steel Casting"
+        },
+        {
+         "code": "2122",
+         "display": "Steel Pipe and Tube Manufacturing",
+         "definition": "Steel Pipe and Tube Manufacturing"
+        }
+       ]
+      },
+      {
+       "code": "213",
+       "display": "Basic Non-Ferrous Metal Manufacturing",
+       "definition": "Basic Non-Ferrous Metal Manufacturing",
+       "concept": [
+        {
+         "code": "2131",
+         "display": "Alumina Production",
+         "definition": "Alumina Production"
+        },
+        {
+         "code": "2132",
+         "display": "Aluminium Smelting",
+         "definition": "Aluminium Smelting"
+        },
+        {
+         "code": "2133",
+         "display": "Copper, Silver, Lead and Zinc Smelting and Refining",
+         "definition": "Copper, Silver, Lead and Zinc Smelting and Refining"
+        },
+        {
+         "code": "2139",
+         "display": "Other Basic Non-Ferrous Metal Manufacturing",
+         "definition": "Other Basic Non-Ferrous Metal Manufacturing"
+        }
+       ]
+      },
+      {
+       "code": "214",
+       "display": "Basic Non-Ferrous Metal Product Manufacturing",
+       "definition": "Basic Non-Ferrous Metal Product Manufacturing",
+       "concept": [
+        {
+         "code": "2141",
+         "display": "Non-Ferrous Metal Casting",
+         "definition": "Non-Ferrous Metal Casting"
+        },
+        {
+         "code": "2142",
+         "display": "Aluminium Rolling, Drawing, Extruding",
+         "definition": "Aluminium Rolling, Drawing, Extruding"
+        },
+        {
+         "code": "2149",
+         "display": "Other Basic Non-Ferrous Metal Product Manufacturing",
+         "definition": "Other Basic Non-Ferrous Metal Product Manufacturing"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "22",
+     "display": "Fabricated Metal Product Manufacturing",
+     "definition": "Fabricated Metal Product Manufacturing",
+     "concept": [
+      {
+       "code": "221",
+       "display": "Iron and Steel Forging",
+       "definition": "Iron and Steel Forging",
+       "concept": [
+        {
+         "code": "2210",
+         "display": "Iron and Steel Forging",
+         "definition": "Iron and Steel Forging"
+        }
+       ]
+      },
+      {
+       "code": "222",
+       "display": "Structural Metal Product Manufacturing",
+       "definition": "Structural Metal Product Manufacturing",
+       "concept": [
+        {
+         "code": "2221",
+         "display": "Structural Steel Fabricating",
+         "definition": "Structural Steel Fabricating"
+        },
+        {
+         "code": "2222",
+         "display": "Prefabricated Metal Building Manufacturing",
+         "definition": "Prefabricated Metal Building Manufacturing"
+        },
+        {
+         "code": "2223",
+         "display": "Architectural Aluminium Product Manufacturing",
+         "definition": "Architectural Aluminium Product Manufacturing"
+        },
+        {
+         "code": "2224",
+         "display": "Metal Roof and Guttering Manufacturing (except Aluminium)",
+         "definition": "Metal Roof and Guttering Manufacturing (except Aluminium)"
+        },
+        {
+         "code": "2229",
+         "display": "Other Structural Metal Product Manufacturing",
+         "definition": "Other Structural Metal Product Manufacturing"
+        }
+       ]
+      },
+      {
+       "code": "223",
+       "display": "Metal Container Manufacturing",
+       "definition": "Metal Container Manufacturing",
+       "concept": [
+        {
+         "code": "2231",
+         "display": "Boiler, Tank and Other Heavy Gauge Metal Container Manufacturing",
+         "definition": "Boiler, Tank and Other Heavy Gauge Metal Container Manufacturing"
+        },
+        {
+         "code": "2239",
+         "display": "Other Metal Container Manufacturing",
+         "definition": "Other Metal Container Manufacturing"
+        }
+       ]
+      },
+      {
+       "code": "224",
+       "display": "Sheet Metal Product Manufacturing (except Metal Structural and Container Products)",
+       "definition": "Sheet Metal Product Manufacturing (except Metal Structural and Container Products)",
+       "concept": [
+        {
+         "code": "2240",
+         "display": "Sheet Metal Product Manufacturing (except Metal Structural and Container Products)",
+         "definition": "Sheet Metal Product Manufacturing (except Metal Structural and Container Products)"
+        }
+       ]
+      },
+      {
+       "code": "229",
+       "display": "Other Fabricated Metal Product Manufacturing",
+       "definition": "Other Fabricated Metal Product Manufacturing",
+       "concept": [
+        {
+         "code": "2291",
+         "display": "Spring and Wire Product Manufacturing",
+         "definition": "Spring and Wire Product Manufacturing"
+        },
+        {
+         "code": "2292",
+         "display": "Nut, Bolt, Screw and Rivet Manufacturing",
+         "definition": "Nut, Bolt, Screw and Rivet Manufacturing"
+        },
+        {
+         "code": "2293",
+         "display": "Metal Coating and Finishing",
+         "definition": "Metal Coating and Finishing"
+        },
+        {
+         "code": "2299",
+         "display": "Other Fabricated Metal Product Manufacturing n.e.c.",
+         "definition": "Other Fabricated Metal Product Manufacturing n.e.c."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "23",
+     "display": "Transport Equipment Manufacturing",
+     "definition": "Transport Equipment Manufacturing",
+     "concept": [
+      {
+       "code": "231",
+       "display": "Motor Vehicle and Motor Vehicle Part Manufacturing",
+       "definition": "Motor Vehicle and Motor Vehicle Part Manufacturing",
+       "concept": [
+        {
+         "code": "2311",
+         "display": "Motor Vehicle Manufacturing",
+         "definition": "Motor Vehicle Manufacturing"
+        },
+        {
+         "code": "2312",
+         "display": "Motor Vehicle Body and Trailer Manufacturing",
+         "definition": "Motor Vehicle Body and Trailer Manufacturing"
+        },
+        {
+         "code": "2313",
+         "display": "Automotive Electrical Component Manufacturing",
+         "definition": "Automotive Electrical Component Manufacturing"
+        },
+        {
+         "code": "2319",
+         "display": "Other Motor Vehicle Parts Manufacturing",
+         "definition": "Other Motor Vehicle Parts Manufacturing"
+        }
+       ]
+      },
+      {
+       "code": "239",
+       "display": "Other Transport Equipment Manufacturing",
+       "definition": "Other Transport Equipment Manufacturing",
+       "concept": [
+        {
+         "code": "2391",
+         "display": "Shipbuilding and Repair Services",
+         "definition": "Shipbuilding and Repair Services"
+        },
+        {
+         "code": "2392",
+         "display": "Boatbuilding and Repair Services",
+         "definition": "Boatbuilding and Repair Services"
+        },
+        {
+         "code": "2393",
+         "display": "Railway Rolling Stock Manufacturing and Repair Services",
+         "definition": "Railway Rolling Stock Manufacturing and Repair Services"
+        },
+        {
+         "code": "2394",
+         "display": "Aircraft Manufacturing and Repair Services",
+         "definition": "Aircraft Manufacturing and Repair Services"
+        },
+        {
+         "code": "2399",
+         "display": "Other Transport Equipment Manufacturing n.e.c.",
+         "definition": "Other Transport Equipment Manufacturing n.e.c."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "24",
+     "display": "Machinery and Equipment Manufacturing",
+     "definition": "Machinery and Equipment Manufacturing",
+     "concept": [
+      {
+       "code": "241",
+       "display": "Professional and Scientific Equipment Manufacturing",
+       "definition": "Professional and Scientific Equipment Manufacturing",
+       "concept": [
+        {
+         "code": "2411",
+         "display": "Photographic, Optical and Ophthalmic Equipment Manufacturing",
+         "definition": "Photographic, Optical and Ophthalmic Equipment Manufacturing"
+        },
+        {
+         "code": "2412",
+         "display": "Medical and Surgical Equipment Manufacturing",
+         "definition": "Medical and Surgical Equipment Manufacturing"
+        },
+        {
+         "code": "2419",
+         "display": "Other Professional and Scientific Equipment Manufacturing",
+         "definition": "Other Professional and Scientific Equipment Manufacturing"
+        }
+       ]
+      },
+      {
+       "code": "242",
+       "display": "Computer and Electronic Equipment Manufacturing",
+       "definition": "Computer and Electronic Equipment Manufacturing",
+       "concept": [
+        {
+         "code": "2421",
+         "display": "Computer and Electronic Office Equipment Manufacturing",
+         "definition": "Computer and Electronic Office Equipment Manufacturing"
+        },
+        {
+         "code": "2422",
+         "display": "Communication Equipment Manufacturing",
+         "definition": "Communication Equipment Manufacturing"
+        },
+        {
+         "code": "2429",
+         "display": "Other Electronic Equipment Manufacturing",
+         "definition": "Other Electronic Equipment Manufacturing"
+        }
+       ]
+      },
+      {
+       "code": "243",
+       "display": "Electrical Equipment Manufacturing",
+       "definition": "Electrical Equipment Manufacturing",
+       "concept": [
+        {
+         "code": "2431",
+         "display": "Electric Cable and Wire Manufacturing",
+         "definition": "Electric Cable and Wire Manufacturing"
+        },
+        {
+         "code": "2432",
+         "display": "Electric Lighting Equipment Manufacturing",
+         "definition": "Electric Lighting Equipment Manufacturing"
+        },
+        {
+         "code": "2439",
+         "display": "Other Electrical Equipment Manufacturing",
+         "definition": "Other Electrical Equipment Manufacturing"
+        }
+       ]
+      },
+      {
+       "code": "244",
+       "display": "Domestic Appliance Manufacturing",
+       "definition": "Domestic Appliance Manufacturing",
+       "concept": [
+        {
+         "code": "2441",
+         "display": "Whiteware Appliance Manufacturing",
+         "definition": "Whiteware Appliance Manufacturing"
+        },
+        {
+         "code": "2449",
+         "display": "Other Domestic Appliance Manufacturing",
+         "definition": "Other Domestic Appliance Manufacturing"
+        }
+       ]
+      },
+      {
+       "code": "245",
+       "display": "Pump, Compressor, Heating and Ventilation Equipment Manufacturing",
+       "definition": "Pump, Compressor, Heating and Ventilation Equipment Manufacturing",
+       "concept": [
+        {
+         "code": "2451",
+         "display": "Pump and Compressor Manufacturing",
+         "definition": "Pump and Compressor Manufacturing"
+        },
+        {
+         "code": "2452",
+         "display": "Fixed Space Heating, Cooling and Ventilation Equipment Manufacturing",
+         "definition": "Fixed Space Heating, Cooling and Ventilation Equipment Manufacturing"
+        }
+       ]
+      },
+      {
+       "code": "246",
+       "display": "Specialised Machinery and Equipment Manufacturing",
+       "definition": "Specialised Machinery and Equipment Manufacturing",
+       "concept": [
+        {
+         "code": "2461",
+         "display": "Agricultural Machinery and Equipment Manufacturing",
+         "definition": "Agricultural Machinery and Equipment Manufacturing"
+        },
+        {
+         "code": "2462",
+         "display": "Mining and Construction Machinery Manufacturing",
+         "definition": "Mining and Construction Machinery Manufacturing"
+        },
+        {
+         "code": "2463",
+         "display": "Machine Tool and Parts Manufacturing",
+         "definition": "Machine Tool and Parts Manufacturing"
+        },
+        {
+         "code": "2469",
+         "display": "Other Specialised Machinery and Equipment Manufacturing",
+         "definition": "Other Specialised Machinery and Equipment Manufacturing"
+        }
+       ]
+      },
+      {
+       "code": "249",
+       "display": "Other Machinery and Equipment Manufacturing",
+       "definition": "Other Machinery and Equipment Manufacturing",
+       "concept": [
+        {
+         "code": "2491",
+         "display": "Lifting and Material Handling Equipment Manufacturing",
+         "definition": "Lifting and Material Handling Equipment Manufacturing"
+        },
+        {
+         "code": "2499",
+         "display": "Other Machinery and Equipment Manufacturing n.e.c.",
+         "definition": "Other Machinery and Equipment Manufacturing n.e.c."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "25",
+     "display": "Furniture and Other Manufacturing",
+     "definition": "Furniture and Other Manufacturing",
+     "concept": [
+      {
+       "code": "251",
+       "display": "Furniture Manufacturing",
+       "definition": "Furniture Manufacturing",
+       "concept": [
+        {
+         "code": "2511",
+         "display": "Wooden Furniture and Upholstered Seat Manufacturing",
+         "definition": "Wooden Furniture and Upholstered Seat Manufacturing"
+        },
+        {
+         "code": "2512",
+         "display": "Metal Furniture Manufacturing",
+         "definition": "Metal Furniture Manufacturing"
+        },
+        {
+         "code": "2513",
+         "display": "Mattress Manufacturing",
+         "definition": "Mattress Manufacturing"
+        },
+        {
+         "code": "2519",
+         "display": "Other Furniture Manufacturing",
+         "definition": "Other Furniture Manufacturing"
+        }
+       ]
+      },
+      {
+       "code": "259",
+       "display": "Other Manufacturing",
+       "definition": "Other Manufacturing",
+       "concept": [
+        {
+         "code": "2591",
+         "display": "Jewellery and Silverware Manufacturing",
+         "definition": "Jewellery and Silverware Manufacturing"
+        },
+        {
+         "code": "2592",
+         "display": "Toy, Sporting and Recreational Product Manufacturing",
+         "definition": "Toy, Sporting and Recreational Product Manufacturing"
+        },
+        {
+         "code": "2599",
+         "display": "Other Manufacturing n.e.c.",
+         "definition": "Other Manufacturing n.e.c."
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "D",
+   "display": "Electricity, Gas, Water and Waste Services",
+   "definition": "Electricity, Gas, Water and Waste Services",
+   "concept": [
+    {
+     "code": "26",
+     "display": "Electricity Supply",
+     "definition": "Electricity Supply",
+     "concept": [
+      {
+       "code": "261",
+       "display": "Electricity Generation",
+       "definition": "Electricity Generation",
+       "concept": [
+        {
+         "code": "2611",
+         "display": "Fossil Fuel Electricity Generation",
+         "definition": "Fossil Fuel Electricity Generation"
+        },
+        {
+         "code": "2612",
+         "display": "Hydro-Electricity Generation",
+         "definition": "Hydro-Electricity Generation"
+        },
+        {
+         "code": "2619",
+         "display": "Other Electricity Generation",
+         "definition": "Other Electricity Generation"
+        }
+       ]
+      },
+      {
+       "code": "262",
+       "display": "Electricity Transmission",
+       "definition": "Electricity Transmission",
+       "concept": [
+        {
+         "code": "2620",
+         "display": "Electricity Transmission",
+         "definition": "Electricity Transmission"
+        }
+       ]
+      },
+      {
+       "code": "263",
+       "display": "Electricity Distribution",
+       "definition": "Electricity Distribution",
+       "concept": [
+        {
+         "code": "2630",
+         "display": "Electricity Distribution",
+         "definition": "Electricity Distribution"
+        }
+       ]
+      },
+      {
+       "code": "264",
+       "display": "On Selling Electricity and Electricity Market Operation",
+       "definition": "On Selling Electricity and Electricity Market Operation",
+       "concept": [
+        {
+         "code": "2640",
+         "display": "On Selling Electricity and Electricity Market Operation",
+         "definition": "On Selling Electricity and Electricity Market Operation"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "27",
+     "display": "Gas Supply",
+     "definition": "Gas Supply",
+     "concept": [
+      {
+       "code": "270",
+       "display": "Gas Supply",
+       "definition": "Gas Supply",
+       "concept": [
+        {
+         "code": "2700",
+         "display": "Gas Supply",
+         "definition": "Gas Supply"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "28",
+     "display": "Water Supply, Sewerage and Drainage Services",
+     "definition": "Water Supply, Sewerage and Drainage Services",
+     "concept": [
+      {
+       "code": "281",
+       "display": "Water Supply, Sewerage and Drainage Services",
+       "definition": "Water Supply, Sewerage and Drainage Services",
+       "concept": [
+        {
+         "code": "2811",
+         "display": "Water Supply",
+         "definition": "Water Supply"
+        },
+        {
+         "code": "2812",
+         "display": "Sewerage and Drainage Services",
+         "definition": "Sewerage and Drainage Services"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "29",
+     "display": "Waste Collection, Treatment and Disposal Services",
+     "definition": "Waste Collection, Treatment and Disposal Services",
+     "concept": [
+      {
+       "code": "291",
+       "display": "Waste Collection Services",
+       "definition": "Waste Collection Services",
+       "concept": [
+        {
+         "code": "2911",
+         "display": "Solid Waste Collection Services",
+         "definition": "Solid Waste Collection Services"
+        },
+        {
+         "code": "2919",
+         "display": "Other Waste Collection Services",
+         "definition": "Other Waste Collection Services"
+        }
+       ]
+      },
+      {
+       "code": "292",
+       "display": "Waste Treatment, Disposal and Remediation Services",
+       "definition": "Waste Treatment, Disposal and Remediation Services",
+       "concept": [
+        {
+         "code": "2921",
+         "display": "Waste Treatment and Disposal Services",
+         "definition": "Waste Treatment and Disposal Services"
+        },
+        {
+         "code": "2922",
+         "display": "Waste Remediation and Materials Recovery Services",
+         "definition": "Waste Remediation and Materials Recovery Services"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "E",
+   "display": "Construction",
+   "definition": "Construction",
+   "concept": [
+    {
+     "code": "30",
+     "display": "Building Construction",
+     "definition": "Building Construction",
+     "concept": [
+      {
+       "code": "301",
+       "display": "Residential Building Construction",
+       "definition": "Residential Building Construction",
+       "concept": [
+        {
+         "code": "3011",
+         "display": "House Construction",
+         "definition": "House Construction"
+        },
+        {
+         "code": "3019",
+         "display": "Other Residential Building Construction",
+         "definition": "Other Residential Building Construction"
+        }
+       ]
+      },
+      {
+       "code": "302",
+       "display": "Non-Residential Building Construction",
+       "definition": "Non-Residential Building Construction",
+       "concept": [
+        {
+         "code": "3020",
+         "display": "Non-Residential Building Construction",
+         "definition": "Non-Residential Building Construction"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "31",
+     "display": "Heavy and Civil Engineering Construction",
+     "definition": "Heavy and Civil Engineering Construction",
+     "concept": [
+      {
+       "code": "310",
+       "display": "Heavy and Civil Engineering Construction",
+       "definition": "Heavy and Civil Engineering Construction",
+       "concept": [
+        {
+         "code": "3101",
+         "display": "Road and Bridge Construction",
+         "definition": "Road and Bridge Construction"
+        },
+        {
+         "code": "3109",
+         "display": "Other Heavy and Civil Engineering Construction",
+         "definition": "Other Heavy and Civil Engineering Construction"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "32",
+     "display": "Construction Services",
+     "definition": "Construction Services",
+     "concept": [
+      {
+       "code": "321",
+       "display": "Land Development and Site Preparation Services",
+       "definition": "Land Development and Site Preparation Services",
+       "concept": [
+        {
+         "code": "3211",
+         "display": "Land Development and Subdivision",
+         "definition": "Land Development and Subdivision"
+        },
+        {
+         "code": "3212",
+         "display": "Site Preparation Services",
+         "definition": "Site Preparation Services"
+        }
+       ]
+      },
+      {
+       "code": "322",
+       "display": "Building Structure Services",
+       "definition": "Building Structure Services",
+       "concept": [
+        {
+         "code": "3221",
+         "display": "Concreting Services",
+         "definition": "Concreting Services"
+        },
+        {
+         "code": "3222",
+         "display": "Bricklaying Services",
+         "definition": "Bricklaying Services"
+        },
+        {
+         "code": "3223",
+         "display": "Roofing Services",
+         "definition": "Roofing Services"
+        },
+        {
+         "code": "3224",
+         "display": "Structural Steel Erection Services",
+         "definition": "Structural Steel Erection Services"
+        }
+       ]
+      },
+      {
+       "code": "323",
+       "display": "Building Installation Services",
+       "definition": "Building Installation Services",
+       "concept": [
+        {
+         "code": "3231",
+         "display": "Plumbing Services",
+         "definition": "Plumbing Services"
+        },
+        {
+         "code": "3232",
+         "display": "Electrical Services",
+         "definition": "Electrical Services"
+        },
+        {
+         "code": "3233",
+         "display": "Air Conditioning and Heating Services",
+         "definition": "Air Conditioning and Heating Services"
+        },
+        {
+         "code": "3234",
+         "display": "Fire and Security Alarm Installation Services",
+         "definition": "Fire and Security Alarm Installation Services"
+        },
+        {
+         "code": "3239",
+         "display": "Other Building Installation Services",
+         "definition": "Other Building Installation Services"
+        }
+       ]
+      },
+      {
+       "code": "324",
+       "display": "Building Completion Services",
+       "definition": "Building Completion Services",
+       "concept": [
+        {
+         "code": "3241",
+         "display": "Plastering and Ceiling Services",
+         "definition": "Plastering and Ceiling Services"
+        },
+        {
+         "code": "3242",
+         "display": "Carpentry Services",
+         "definition": "Carpentry Services"
+        },
+        {
+         "code": "3243",
+         "display": "Tiling and Carpeting Services",
+         "definition": "Tiling and Carpeting Services"
+        },
+        {
+         "code": "3244",
+         "display": "Painting and Decorating Services",
+         "definition": "Painting and Decorating Services"
+        },
+        {
+         "code": "3245",
+         "display": "Glazing Services",
+         "definition": "Glazing Services"
+        }
+       ]
+      },
+      {
+       "code": "329",
+       "display": "Other Construction Services",
+       "definition": "Other Construction Services",
+       "concept": [
+        {
+         "code": "3291",
+         "display": "Landscape Construction Services",
+         "definition": "Landscape Construction Services"
+        },
+        {
+         "code": "3292",
+         "display": "Hire of Construction Machinery with Operator",
+         "definition": "Hire of Construction Machinery with Operator"
+        },
+        {
+         "code": "3299",
+         "display": "Other Construction Services n.e.c.",
+         "definition": "Other Construction Services n.e.c."
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "display": "Wholesale Trade",
+   "definition": "Wholesale Trade",
+   "concept": [
+    {
+     "code": "33",
+     "display": "Basic Material Wholesaling",
+     "definition": "Basic Material Wholesaling",
+     "concept": [
+      {
+       "code": "331",
+       "display": "Agricultural Product Wholesaling",
+       "definition": "Agricultural Product Wholesaling",
+       "concept": [
+        {
+         "code": "3311",
+         "display": "Wool Wholesaling",
+         "definition": "Wool Wholesaling"
+        },
+        {
+         "code": "3312",
+         "display": "Cereal Grain Wholesaling",
+         "definition": "Cereal Grain Wholesaling"
+        },
+        {
+         "code": "3319",
+         "display": "Other Agricultural Product Wholesaling",
+         "definition": "Other Agricultural Product Wholesaling"
+        }
+       ]
+      },
+      {
+       "code": "332",
+       "display": "Mineral, Metal and Chemical Wholesaling",
+       "definition": "Mineral, Metal and Chemical Wholesaling",
+       "concept": [
+        {
+         "code": "3321",
+         "display": "Petroleum Product Wholesaling",
+         "definition": "Petroleum Product Wholesaling"
+        },
+        {
+         "code": "3322",
+         "display": "Metal and Mineral Wholesaling",
+         "definition": "Metal and Mineral Wholesaling"
+        },
+        {
+         "code": "3323",
+         "display": "Industrial and Agricultural Chemical Product Wholesaling",
+         "definition": "Industrial and Agricultural Chemical Product Wholesaling"
+        }
+       ]
+      },
+      {
+       "code": "333",
+       "display": "Timber and Hardware Goods Wholesaling",
+       "definition": "Timber and Hardware Goods Wholesaling",
+       "concept": [
+        {
+         "code": "3331",
+         "display": "Timber Wholesaling",
+         "definition": "Timber Wholesaling"
+        },
+        {
+         "code": "3332",
+         "display": "Plumbing Goods Wholesaling",
+         "definition": "Plumbing Goods Wholesaling"
+        },
+        {
+         "code": "3339",
+         "display": "Other Hardware Goods Wholesaling",
+         "definition": "Other Hardware Goods Wholesaling"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "34",
+     "display": "Machinery and Equipment Wholesaling",
+     "definition": "Machinery and Equipment Wholesaling",
+     "concept": [
+      {
+       "code": "341",
+       "display": "Specialised Industrial Machinery and Equipment Wholesaling",
+       "definition": "Specialised Industrial Machinery and Equipment Wholesaling",
+       "concept": [
+        {
+         "code": "3411",
+         "display": "Agricultural and Construction Machinery Wholesaling",
+         "definition": "Agricultural and Construction Machinery Wholesaling"
+        },
+        {
+         "code": "3419",
+         "display": "Other Specialised Industrial Machinery and Equipment Wholesaling",
+         "definition": "Other Specialised Industrial Machinery and Equipment Wholesaling"
+        }
+       ]
+      },
+      {
+       "code": "349",
+       "display": "Other Machinery and Equipment Wholesaling",
+       "definition": "Other Machinery and Equipment Wholesaling",
+       "concept": [
+        {
+         "code": "3491",
+         "display": "Professional and Scientific Goods Wholesaling",
+         "definition": "Professional and Scientific Goods Wholesaling"
+        },
+        {
+         "code": "3492",
+         "display": "Computer and Computer Peripheral Wholesaling",
+         "definition": "Computer and Computer Peripheral Wholesaling"
+        },
+        {
+         "code": "3493",
+         "display": "Telecommunication Goods Wholesaling",
+         "definition": "Telecommunication Goods Wholesaling"
+        },
+        {
+         "code": "3494",
+         "display": "Other Electrical and Electronic Goods Wholesaling",
+         "definition": "Other Electrical and Electronic Goods Wholesaling"
+        },
+        {
+         "code": "3499",
+         "display": "Other Machinery and Equipment Wholesaling n.e.c.",
+         "definition": "Other Machinery and Equipment Wholesaling n.e.c."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "35",
+     "display": "Motor Vehicle and Motor Vehicle Parts Wholesaling",
+     "definition": "Motor Vehicle and Motor Vehicle Parts Wholesaling",
+     "concept": [
+      {
+       "code": "350",
+       "display": "Motor Vehicle and Motor Vehicle Parts Wholesaling",
+       "definition": "Motor Vehicle and Motor Vehicle Parts Wholesaling",
+       "concept": [
+        {
+         "code": "3501",
+         "display": "Car Wholesaling",
+         "definition": "Car Wholesaling"
+        },
+        {
+         "code": "3502",
+         "display": "Commercial Vehicle Wholesaling",
+         "definition": "Commercial Vehicle Wholesaling"
+        },
+        {
+         "code": "3503",
+         "display": "Trailer and Other Motor Vehicle Wholesaling",
+         "definition": "Trailer and Other Motor Vehicle Wholesaling"
+        },
+        {
+         "code": "3504",
+         "display": "Motor Vehicle New Parts Wholesaling",
+         "definition": "Motor Vehicle New Parts Wholesaling"
+        },
+        {
+         "code": "3505",
+         "display": "Motor Vehicle Dismantling and Used Parts Wholesaling",
+         "definition": "Motor Vehicle Dismantling and Used Parts Wholesaling"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "36",
+     "display": "Grocery, Liquor and Tobacco Product Wholesaling",
+     "definition": "Grocery, Liquor and Tobacco Product Wholesaling",
+     "concept": [
+      {
+       "code": "360",
+       "display": "Grocery, Liquor and Tobacco Product Wholesaling",
+       "definition": "Grocery, Liquor and Tobacco Product Wholesaling",
+       "concept": [
+        {
+         "code": "3601",
+         "display": "General Line Grocery Wholesaling",
+         "definition": "General Line Grocery Wholesaling"
+        },
+        {
+         "code": "3602",
+         "display": "Meat, Poultry and Smallgoods Wholesaling",
+         "definition": "Meat, Poultry and Smallgoods Wholesaling"
+        },
+        {
+         "code": "3603",
+         "display": "Dairy Produce Wholesaling",
+         "definition": "Dairy Produce Wholesaling"
+        },
+        {
+         "code": "3604",
+         "display": "Fish and Seafood Wholesaling",
+         "definition": "Fish and Seafood Wholesaling"
+        },
+        {
+         "code": "3605",
+         "display": "Fruit and Vegetable Wholesaling",
+         "definition": "Fruit and Vegetable Wholesaling"
+        },
+        {
+         "code": "3606",
+         "display": "Liquor and Tobacco Product Wholesaling",
+         "definition": "Liquor and Tobacco Product Wholesaling"
+        },
+        {
+         "code": "3609",
+         "display": "Other Grocery Wholesaling",
+         "definition": "Other Grocery Wholesaling"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "37",
+     "display": "Other Goods Wholesaling",
+     "definition": "Other Goods Wholesaling",
+     "concept": [
+      {
+       "code": "371",
+       "display": "Textile, Clothing and Footwear Wholesaling",
+       "definition": "Textile, Clothing and Footwear Wholesaling",
+       "concept": [
+        {
+         "code": "3711",
+         "display": "Textile Product Wholesaling",
+         "definition": "Textile Product Wholesaling"
+        },
+        {
+         "code": "3712",
+         "display": "Clothing and Footwear Wholesaling",
+         "definition": "Clothing and Footwear Wholesaling"
+        }
+       ]
+      },
+      {
+       "code": "372",
+       "display": "Pharmaceutical and Toiletry Goods Wholesaling",
+       "definition": "Pharmaceutical and Toiletry Goods Wholesaling",
+       "concept": [
+        {
+         "code": "3720",
+         "display": "Pharmaceutical and Toiletry Goods Wholesaling",
+         "definition": "Pharmaceutical and Toiletry Goods Wholesaling"
+        }
+       ]
+      },
+      {
+       "code": "373",
+       "display": "Furniture, Floor Covering and Other Goods Wholesaling",
+       "definition": "Furniture, Floor Covering and Other Goods Wholesaling",
+       "concept": [
+        {
+         "code": "3731",
+         "display": "Furniture and Floor Covering Wholesaling",
+         "definition": "Furniture and Floor Covering Wholesaling"
+        },
+        {
+         "code": "3732",
+         "display": "Jewellery and Watch Wholesaling",
+         "definition": "Jewellery and Watch Wholesaling"
+        },
+        {
+         "code": "3733",
+         "display": "Kitchen and Diningware Wholesaling",
+         "definition": "Kitchen and Diningware Wholesaling"
+        },
+        {
+         "code": "3734",
+         "display": "Toy and Sporting Goods Wholesaling",
+         "definition": "Toy and Sporting Goods Wholesaling"
+        },
+        {
+         "code": "3735",
+         "display": "Book and Magazine Wholesaling",
+         "definition": "Book and Magazine Wholesaling"
+        },
+        {
+         "code": "3736",
+         "display": "Paper Product Wholesaling",
+         "definition": "Paper Product Wholesaling"
+        },
+        {
+         "code": "3739",
+         "display": "Other Goods Wholesaling n.e.c.",
+         "definition": "Other Goods Wholesaling n.e.c."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "38",
+     "display": "Commission-Based Wholesaling",
+     "definition": "Commission-Based Wholesaling",
+     "concept": [
+      {
+       "code": "380",
+       "display": "Commission-Based Wholesaling",
+       "definition": "Commission-Based Wholesaling",
+       "concept": [
+        {
+         "code": "3800",
+         "display": "Commission-Based Wholesaling",
+         "definition": "Commission-Based Wholesaling"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "G",
+   "display": "Retail Trade",
+   "definition": "Retail Trade",
+   "concept": [
+    {
+     "code": "39",
+     "display": "Motor Vehicle and Motor Vehicle Parts Retailing",
+     "definition": "Motor Vehicle and Motor Vehicle Parts Retailing",
+     "concept": [
+      {
+       "code": "391",
+       "display": "Motor Vehicle Retailing",
+       "definition": "Motor Vehicle Retailing",
+       "concept": [
+        {
+         "code": "3911",
+         "display": "Car Retailing",
+         "definition": "Car Retailing"
+        },
+        {
+         "code": "3912",
+         "display": "Motor Cycle Retailing",
+         "definition": "Motor Cycle Retailing"
+        },
+        {
+         "code": "3913",
+         "display": "Trailer and Other Motor Vehicle Retailing",
+         "definition": "Trailer and Other Motor Vehicle Retailing"
+        }
+       ]
+      },
+      {
+       "code": "392",
+       "display": "Motor Vehicle Parts and Tyre Retailing",
+       "definition": "Motor Vehicle Parts and Tyre Retailing",
+       "concept": [
+        {
+         "code": "3921",
+         "display": "Motor Vehicle Parts Retailing",
+         "definition": "Motor Vehicle Parts Retailing"
+        },
+        {
+         "code": "3922",
+         "display": "Tyre Retailing",
+         "definition": "Tyre Retailing"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "40",
+     "display": "Fuel Retailing",
+     "definition": "Fuel Retailing",
+     "concept": [
+      {
+       "code": "400",
+       "display": "Fuel Retailing",
+       "definition": "Fuel Retailing",
+       "concept": [
+        {
+         "code": "4000",
+         "display": "Fuel Retailing",
+         "definition": "Fuel Retailing"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "41",
+     "display": "Food Retailing",
+     "definition": "Food Retailing",
+     "concept": [
+      {
+       "code": "411",
+       "display": "Supermarket and Grocery Stores",
+       "definition": "Supermarket and Grocery Stores",
+       "concept": [
+        {
+         "code": "4110",
+         "display": "Supermarket and Grocery Stores",
+         "definition": "Supermarket and Grocery Stores"
+        }
+       ]
+      },
+      {
+       "code": "412",
+       "display": "Specialised Food Retailing",
+       "definition": "Specialised Food Retailing",
+       "concept": [
+        {
+         "code": "4121",
+         "display": "Fresh Meat, Fish and Poultry Retailing",
+         "definition": "Fresh Meat, Fish and Poultry Retailing"
+        },
+        {
+         "code": "4122",
+         "display": "Fruit and Vegetable Retailing",
+         "definition": "Fruit and Vegetable Retailing"
+        },
+        {
+         "code": "4123",
+         "display": "Liquor Retailing",
+         "definition": "Liquor Retailing"
+        },
+        {
+         "code": "4129",
+         "display": "Other Specialised Food Retailing",
+         "definition": "Other Specialised Food Retailing"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "42",
+     "display": "Other Store-Based Retailing",
+     "definition": "Other Store-Based Retailing",
+     "concept": [
+      {
+       "code": "421",
+       "display": "Furniture, Floor Coverings, Houseware and Textile Goods Retailing",
+       "definition": "Furniture, Floor Coverings, Houseware and Textile Goods Retailing",
+       "concept": [
+        {
+         "code": "4211",
+         "display": "Furniture Retailing",
+         "definition": "Furniture Retailing"
+        },
+        {
+         "code": "4212",
+         "display": "Floor Coverings Retailing",
+         "definition": "Floor Coverings Retailing"
+        },
+        {
+         "code": "4213",
+         "display": "Houseware Retailing",
+         "definition": "Houseware Retailing"
+        },
+        {
+         "code": "4214",
+         "display": "Manchester and Other Textile Goods Retailing",
+         "definition": "Manchester and Other Textile Goods Retailing"
+        }
+       ]
+      },
+      {
+       "code": "422",
+       "display": "Electrical and Electronic Goods Retailing",
+       "definition": "Electrical and Electronic Goods Retailing",
+       "concept": [
+        {
+         "code": "4221",
+         "display": "Electrical, Electronic and Gas Appliance Retailing",
+         "definition": "Electrical, Electronic and Gas Appliance Retailing"
+        },
+        {
+         "code": "4222",
+         "display": "Computer and Computer Peripheral Retailing",
+         "definition": "Computer and Computer Peripheral Retailing"
+        },
+        {
+         "code": "4229",
+         "display": "Other Electrical and Electronic Goods Retailing",
+         "definition": "Other Electrical and Electronic Goods Retailing"
+        }
+       ]
+      },
+      {
+       "code": "423",
+       "display": "Hardware, Building and Garden Supplies Retailing",
+       "definition": "Hardware, Building and Garden Supplies Retailing",
+       "concept": [
+        {
+         "code": "4231",
+         "display": "Hardware and Building Supplies Retailing",
+         "definition": "Hardware and Building Supplies Retailing"
+        },
+        {
+         "code": "4232",
+         "display": "Garden Supplies Retailing",
+         "definition": "Garden Supplies Retailing"
+        }
+       ]
+      },
+      {
+       "code": "424",
+       "display": "Recreational Goods Retailing",
+       "definition": "Recreational Goods Retailing",
+       "concept": [
+        {
+         "code": "4241",
+         "display": "Sport and Camping Equipment Retailing",
+         "definition": "Sport and Camping Equipment Retailing"
+        },
+        {
+         "code": "4242",
+         "display": "Entertainment Media Retailing",
+         "definition": "Entertainment Media Retailing"
+        },
+        {
+         "code": "4243",
+         "display": "Toy and Game Retailing",
+         "definition": "Toy and Game Retailing"
+        },
+        {
+         "code": "4244",
+         "display": "Newspaper and Book Retailing",
+         "definition": "Newspaper and Book Retailing"
+        },
+        {
+         "code": "4245",
+         "display": "Marine Equipment Retailing",
+         "definition": "Marine Equipment Retailing"
+        }
+       ]
+      },
+      {
+       "code": "425",
+       "display": "Clothing, Footwear and Personal Accessory Retailing",
+       "definition": "Clothing, Footwear and Personal Accessory Retailing",
+       "concept": [
+        {
+         "code": "4251",
+         "display": "Clothing Retailing",
+         "definition": "Clothing Retailing"
+        },
+        {
+         "code": "4252",
+         "display": "Footwear Retailing",
+         "definition": "Footwear Retailing"
+        },
+        {
+         "code": "4253",
+         "display": "Watch and Jewellery Retailing",
+         "definition": "Watch and Jewellery Retailing"
+        },
+        {
+         "code": "4259",
+         "display": "Other Personal Accessory Retailing",
+         "definition": "Other Personal Accessory Retailing"
+        }
+       ]
+      },
+      {
+       "code": "426",
+       "display": "Department Stores",
+       "definition": "Department Stores",
+       "concept": [
+        {
+         "code": "4260",
+         "display": "Department Stores",
+         "definition": "Department Stores"
+        }
+       ]
+      },
+      {
+       "code": "427",
+       "display": "Pharmaceutical and Other Store-Based Retailing",
+       "definition": "Pharmaceutical and Other Store-Based Retailing",
+       "concept": [
+        {
+         "code": "4271",
+         "display": "Pharmaceutical, Cosmetic and Toiletry Goods Retailing",
+         "definition": "Pharmaceutical, Cosmetic and Toiletry Goods Retailing"
+        },
+        {
+         "code": "4272",
+         "display": "Stationery Goods Retailing",
+         "definition": "Stationery Goods Retailing"
+        },
+        {
+         "code": "4273",
+         "display": "Antique and Used Goods Retailing",
+         "definition": "Antique and Used Goods Retailing"
+        },
+        {
+         "code": "4274",
+         "display": "Flower Retailing",
+         "definition": "Flower Retailing"
+        },
+        {
+         "code": "4279",
+         "display": "Other Store-Based Retailing n.e.c.",
+         "definition": "Other Store-Based Retailing n.e.c."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "43",
+     "display": "Non-Store Retailing and Retail Commission-Based Buying and/or Selling",
+     "definition": "Non-Store Retailing and Retail Commission-Based Buying and/or Selling",
+     "concept": [
+      {
+       "code": "431",
+       "display": "Non-Store Retailing",
+       "definition": "Non-Store Retailing",
+       "concept": [
+        {
+         "code": "4310",
+         "display": "Non-Store Retailing",
+         "definition": "Non-Store Retailing"
+        }
+       ]
+      },
+      {
+       "code": "432",
+       "display": "Retail Commission-Based Buying and/or Selling",
+       "definition": "Retail Commission-Based Buying and/or Selling",
+       "concept": [
+        {
+         "code": "4320",
+         "display": "Retail Commission-Based Buying and/or Selling",
+         "definition": "Retail Commission-Based Buying and/or Selling"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "H",
+   "display": "Accommodation and Food Services",
+   "definition": "Accommodation and Food Services",
+   "concept": [
+    {
+     "code": "44",
+     "display": "Accommodation",
+     "definition": "Accommodation",
+     "concept": [
+      {
+       "code": "440",
+       "display": "Accommodation",
+       "definition": "Accommodation",
+       "concept": [
+        {
+         "code": "4400",
+         "display": "Accommodation",
+         "definition": "Accommodation"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "45",
+     "display": "Food and Beverage Services",
+     "definition": "Food and Beverage Services",
+     "concept": [
+      {
+       "code": "451",
+       "display": "Cafes, Restaurants and Takeaway Food Services",
+       "definition": "Cafes, Restaurants and Takeaway Food Services",
+       "concept": [
+        {
+         "code": "4511",
+         "display": "Cafes and Restaurants",
+         "definition": "Cafes and Restaurants"
+        },
+        {
+         "code": "4512",
+         "display": "Takeaway Food Services",
+         "definition": "Takeaway Food Services"
+        },
+        {
+         "code": "4513",
+         "display": "Catering Services",
+         "definition": "Catering Services"
+        }
+       ]
+      },
+      {
+       "code": "452",
+       "display": "Pubs, Taverns and Bars",
+       "definition": "Pubs, Taverns and Bars",
+       "concept": [
+        {
+         "code": "4520",
+         "display": "Pubs, Taverns and Bars",
+         "definition": "Pubs, Taverns and Bars"
+        }
+       ]
+      },
+      {
+       "code": "453",
+       "display": "Clubs (Hospitality)",
+       "definition": "Clubs (Hospitality)",
+       "concept": [
+        {
+         "code": "4530",
+         "display": "Clubs (Hospitality)",
+         "definition": "Clubs (Hospitality)"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "I",
+   "display": "Transport, Postal and Warehousing",
+   "definition": "Transport, Postal and Warehousing",
+   "concept": [
+    {
+     "code": "46",
+     "display": "Road Transport",
+     "definition": "Road Transport",
+     "concept": [
+      {
+       "code": "461",
+       "display": "Road Freight Transport",
+       "definition": "Road Freight Transport",
+       "concept": [
+        {
+         "code": "4610",
+         "display": "Road Freight Transport",
+         "definition": "Road Freight Transport"
+        }
+       ]
+      },
+      {
+       "code": "462",
+       "display": "Road Passenger Transport",
+       "definition": "Road Passenger Transport",
+       "concept": [
+        {
+         "code": "4621",
+         "display": "Interurban and Rural Bus Transport",
+         "definition": "Interurban and Rural Bus Transport"
+        },
+        {
+         "code": "4622",
+         "display": "Urban Bus Transport (Including Tramway)",
+         "definition": "Urban Bus Transport (Including Tramway)"
+        },
+        {
+         "code": "4623",
+         "display": "Taxi and Other Road Transport",
+         "definition": "Taxi and Other Road Transport"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "47",
+     "display": "Rail Transport",
+     "definition": "Rail Transport",
+     "concept": [
+      {
+       "code": "471",
+       "display": "Rail Freight Transport",
+       "definition": "Rail Freight Transport",
+       "concept": [
+        {
+         "code": "4710",
+         "display": "Rail Freight Transport",
+         "definition": "Rail Freight Transport"
+        }
+       ]
+      },
+      {
+       "code": "472",
+       "display": "Rail Passenger Transport",
+       "definition": "Rail Passenger Transport",
+       "concept": [
+        {
+         "code": "4720",
+         "display": "Rail Passenger Transport",
+         "definition": "Rail Passenger Transport"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "48",
+     "display": "Water Transport",
+     "definition": "Water Transport",
+     "concept": [
+      {
+       "code": "481",
+       "display": "Water Freight Transport",
+       "definition": "Water Freight Transport",
+       "concept": [
+        {
+         "code": "4810",
+         "display": "Water Freight Transport",
+         "definition": "Water Freight Transport"
+        }
+       ]
+      },
+      {
+       "code": "482",
+       "display": "Water Passenger Transport",
+       "definition": "Water Passenger Transport",
+       "concept": [
+        {
+         "code": "4820",
+         "display": "Water Passenger Transport",
+         "definition": "Water Passenger Transport"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "49",
+     "display": "Air and Space Transport",
+     "definition": "Air and Space Transport",
+     "concept": [
+      {
+       "code": "490",
+       "display": "Air and Space Transport",
+       "definition": "Air and Space Transport",
+       "concept": [
+        {
+         "code": "4900",
+         "display": "Air and Space Transport",
+         "definition": "Air and Space Transport"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "50",
+     "display": "Other Transport",
+     "definition": "Other Transport",
+     "concept": [
+      {
+       "code": "501",
+       "display": "Scenic and Sightseeing Transport",
+       "definition": "Scenic and Sightseeing Transport",
+       "concept": [
+        {
+         "code": "5010",
+         "display": "Scenic and Sightseeing Transport",
+         "definition": "Scenic and Sightseeing Transport"
+        }
+       ]
+      },
+      {
+       "code": "502",
+       "display": "Pipeline and Other Transport",
+       "definition": "Pipeline and Other Transport",
+       "concept": [
+        {
+         "code": "5021",
+         "display": "Pipeline Transport",
+         "definition": "Pipeline Transport"
+        },
+        {
+         "code": "5029",
+         "display": "Other Transport n.e.c.",
+         "definition": "Other Transport n.e.c."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "51",
+     "display": "Postal and Courier Pick-up and Delivery Services",
+     "definition": "Postal and Courier Pick-up and Delivery Services",
+     "concept": [
+      {
+       "code": "510",
+       "display": "Postal and Courier Pick-up and Delivery Services",
+       "definition": "Postal and Courier Pick-up and Delivery Services",
+       "concept": [
+        {
+         "code": "5101",
+         "display": "Postal Services",
+         "definition": "Postal Services"
+        },
+        {
+         "code": "5102",
+         "display": "Courier Pick-up and Delivery Services",
+         "definition": "Courier Pick-up and Delivery Services"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "52",
+     "display": "Transport Support Services",
+     "definition": "Transport Support Services",
+     "concept": [
+      {
+       "code": "521",
+       "display": "Water Transport Support Services",
+       "definition": "Water Transport Support Services",
+       "concept": [
+        {
+         "code": "5211",
+         "display": "Stevedoring Services",
+         "definition": "Stevedoring Services"
+        },
+        {
+         "code": "5212",
+         "display": "Port and Water Transport Terminal Operations",
+         "definition": "Port and Water Transport Terminal Operations"
+        },
+        {
+         "code": "5219",
+         "display": "Other Water Transport Support Services",
+         "definition": "Other Water Transport Support Services"
+        }
+       ]
+      },
+      {
+       "code": "522",
+       "display": "Airport Operations and Other Air Transport Support Services",
+       "definition": "Airport Operations and Other Air Transport Support Services",
+       "concept": [
+        {
+         "code": "5220",
+         "display": "Airport Operations and Other Air Transport Support Services",
+         "definition": "Airport Operations and Other Air Transport Support Services"
+        }
+       ]
+      },
+      {
+       "code": "529",
+       "display": "Other Transport Support Services",
+       "definition": "Other Transport Support Services",
+       "concept": [
+        {
+         "code": "5291",
+         "display": "Customs Agency Services",
+         "definition": "Customs Agency Services"
+        },
+        {
+         "code": "5292",
+         "display": "Freight Forwarding Services",
+         "definition": "Freight Forwarding Services"
+        },
+        {
+         "code": "5299",
+         "display": "Other Transport Support Services n.e.c.",
+         "definition": "Other Transport Support Services n.e.c."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "53",
+     "display": "Warehousing and Storage Services",
+     "definition": "Warehousing and Storage Services",
+     "concept": [
+      {
+       "code": "530",
+       "display": "Warehousing and Storage Services",
+       "definition": "Warehousing and Storage Services",
+       "concept": [
+        {
+         "code": "5301",
+         "display": "Grain Storage Services",
+         "definition": "Grain Storage Services"
+        },
+        {
+         "code": "5309",
+         "display": "Other Warehousing and Storage Services",
+         "definition": "Other Warehousing and Storage Services"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "J",
+   "display": "Information Media and Telecommunications",
+   "definition": "Information Media and Telecommunications",
+   "concept": [
+    {
+     "code": "54",
+     "display": "Publishing (except Internet and Music Publishing)",
+     "definition": "Publishing (except Internet and Music Publishing)",
+     "concept": [
+      {
+       "code": "541",
+       "display": "Newspaper, Periodical, Book and Directory Publishing",
+       "definition": "Newspaper, Periodical, Book and Directory Publishing",
+       "concept": [
+        {
+         "code": "5411",
+         "display": "Newspaper Publishing",
+         "definition": "Newspaper Publishing"
+        },
+        {
+         "code": "5412",
+         "display": "Magazine and Other Periodical Publishing",
+         "definition": "Magazine and Other Periodical Publishing"
+        },
+        {
+         "code": "5413",
+         "display": "Book Publishing",
+         "definition": "Book Publishing"
+        },
+        {
+         "code": "5414",
+         "display": "Directory and Mailing List Publishing",
+         "definition": "Directory and Mailing List Publishing"
+        },
+        {
+         "code": "5419",
+         "display": "Other Publishing (except Software, Music and Internet)",
+         "definition": "Other Publishing (except Software, Music and Internet)"
+        }
+       ]
+      },
+      {
+       "code": "542",
+       "display": "Software Publishing",
+       "definition": "Software Publishing",
+       "concept": [
+        {
+         "code": "5420",
+         "display": "Software Publishing",
+         "definition": "Software Publishing"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "55",
+     "display": "Motion Picture and Sound Recording Activities",
+     "definition": "Motion Picture and Sound Recording Activities",
+     "concept": [
+      {
+       "code": "551",
+       "display": "Motion Picture and Video Activities",
+       "definition": "Motion Picture and Video Activities",
+       "concept": [
+        {
+         "code": "5511",
+         "display": "Motion Picture and Video Production",
+         "definition": "Motion Picture and Video Production"
+        },
+        {
+         "code": "5512",
+         "display": "Motion Picture and Video Distribution",
+         "definition": "Motion Picture and Video Distribution"
+        },
+        {
+         "code": "5513",
+         "display": "Motion Picture Exhibition",
+         "definition": "Motion Picture Exhibition"
+        },
+        {
+         "code": "5514",
+         "display": "Post-production Services and Other Motion Picture and Video Activities",
+         "definition": "Post-production Services and Other Motion Picture and Video Activities"
+        }
+       ]
+      },
+      {
+       "code": "552",
+       "display": "Sound Recording and Music Publishing",
+       "definition": "Sound Recording and Music Publishing",
+       "concept": [
+        {
+         "code": "5521",
+         "display": "Music Publishing",
+         "definition": "Music Publishing"
+        },
+        {
+         "code": "5522",
+         "display": "Music and Other Sound Recording Activities",
+         "definition": "Music and Other Sound Recording Activities"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "56",
+     "display": "Broadcasting (except Internet)",
+     "definition": "Broadcasting (except Internet)",
+     "concept": [
+      {
+       "code": "561",
+       "display": "Radio Broadcasting",
+       "definition": "Radio Broadcasting",
+       "concept": [
+        {
+         "code": "5610",
+         "display": "Radio Broadcasting",
+         "definition": "Radio Broadcasting"
+        }
+       ]
+      },
+      {
+       "code": "562",
+       "display": "Television Broadcasting",
+       "definition": "Television Broadcasting",
+       "concept": [
+        {
+         "code": "5621",
+         "display": "Free-to-Air Television Broadcasting",
+         "definition": "Free-to-Air Television Broadcasting"
+        },
+        {
+         "code": "5622",
+         "display": "Cable and Other Subscription Broadcasting",
+         "definition": "Cable and Other Subscription Broadcasting"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "57",
+     "display": "Internet Publishing and Broadcasting",
+     "definition": "Internet Publishing and Broadcasting",
+     "concept": [
+      {
+       "code": "570",
+       "display": "Internet Publishing and Broadcasting",
+       "definition": "Internet Publishing and Broadcasting",
+       "concept": [
+        {
+         "code": "5700",
+         "display": "Internet Publishing and Broadcasting",
+         "definition": "Internet Publishing and Broadcasting"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "58",
+     "display": "Telecommunications Services",
+     "definition": "Telecommunications Services",
+     "concept": [
+      {
+       "code": "580",
+       "display": "Telecommunications Services",
+       "definition": "Telecommunications Services",
+       "concept": [
+        {
+         "code": "5801",
+         "display": "Wired Telecommunications Network Operation",
+         "definition": "Wired Telecommunications Network Operation"
+        },
+        {
+         "code": "5802",
+         "display": "Other Telecommunications Network Operation",
+         "definition": "Other Telecommunications Network Operation"
+        },
+        {
+         "code": "5809",
+         "display": "Other Telecommunications Services",
+         "definition": "Other Telecommunications Services"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "59",
+     "display": "Internet Service Providers, Web Search Portals and Data Processing Services",
+     "definition": "Internet Service Providers, Web Search Portals and Data Processing Services",
+     "concept": [
+      {
+       "code": "591",
+       "display": "Internet Service Providers and Web Search Portals",
+       "definition": "Internet Service Providers and Web Search Portals",
+       "concept": [
+        {
+         "code": "5910",
+         "display": "Internet Service Providers and Web Search Portals",
+         "definition": "Internet Service Providers and Web Search Portals"
+        }
+       ]
+      },
+      {
+       "code": "592",
+       "display": "Data Processing, Web Hosting and Electronic Information Storage Services",
+       "definition": "Data Processing, Web Hosting and Electronic Information Storage Services",
+       "concept": [
+        {
+         "code": "5921",
+         "display": "Data Processing and Web Hosting Services",
+         "definition": "Data Processing and Web Hosting Services"
+        },
+        {
+         "code": "5922",
+         "display": "Electronic Information Storage Services",
+         "definition": "Electronic Information Storage Services"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "60",
+     "display": "Library and Other Information Services",
+     "definition": "Library and Other Information Services",
+     "concept": [
+      {
+       "code": "601",
+       "display": "Libraries and Archives",
+       "definition": "Libraries and Archives",
+       "concept": [
+        {
+         "code": "6010",
+         "display": "Libraries and Archives",
+         "definition": "Libraries and Archives"
+        }
+       ]
+      },
+      {
+       "code": "602",
+       "display": "Other Information Services",
+       "definition": "Other Information Services",
+       "concept": [
+        {
+         "code": "6020",
+         "display": "Other Information Services",
+         "definition": "Other Information Services"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "K",
+   "display": "Financial and Insurance Services",
+   "definition": "Financial and Insurance Services",
+   "concept": [
+    {
+     "code": "62",
+     "display": "Finance",
+     "definition": "Finance",
+     "concept": [
+      {
+       "code": "621",
+       "display": "Central Banking",
+       "definition": "Central Banking",
+       "concept": [
+        {
+         "code": "6210",
+         "display": "Central Banking",
+         "definition": "Central Banking"
+        }
+       ]
+      },
+      {
+       "code": "622",
+       "display": "Depository Financial Intermediation",
+       "definition": "Depository Financial Intermediation",
+       "concept": [
+        {
+         "code": "6221",
+         "display": "Banking",
+         "definition": "Banking"
+        },
+        {
+         "code": "6222",
+         "display": "Building Society Operation",
+         "definition": "Building Society Operation"
+        },
+        {
+         "code": "6223",
+         "display": "Credit Union Operation",
+         "definition": "Credit Union Operation"
+        },
+        {
+         "code": "6229",
+         "display": "Other Depository Financial Intermediation",
+         "definition": "Other Depository Financial Intermediation"
+        }
+       ]
+      },
+      {
+       "code": "623",
+       "display": "Non-Depository Financing",
+       "definition": "Non-Depository Financing",
+       "concept": [
+        {
+         "code": "6230",
+         "display": "Non-Depository Financing",
+         "definition": "Non-Depository Financing"
+        }
+       ]
+      },
+      {
+       "code": "624",
+       "display": "Financial Asset Investing",
+       "definition": "Financial Asset Investing",
+       "concept": [
+        {
+         "code": "6240",
+         "display": "Financial Asset Investing",
+         "definition": "Financial Asset Investing"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "63",
+     "display": "Insurance and Superannuation Funds",
+     "definition": "Insurance and Superannuation Funds",
+     "concept": [
+      {
+       "code": "631",
+       "display": "Life Insurance",
+       "definition": "Life Insurance",
+       "concept": [
+        {
+         "code": "6310",
+         "display": "Life Insurance",
+         "definition": "Life Insurance"
+        }
+       ]
+      },
+      {
+       "code": "632",
+       "display": "Health and General Insurance",
+       "definition": "Health and General Insurance",
+       "concept": [
+        {
+         "code": "6321",
+         "display": "Health Insurance",
+         "definition": "Health Insurance"
+        },
+        {
+         "code": "6322",
+         "display": "General Insurance",
+         "definition": "General Insurance"
+        }
+       ]
+      },
+      {
+       "code": "633",
+       "display": "Superannuation Funds",
+       "definition": "Superannuation Funds",
+       "concept": [
+        {
+         "code": "6330",
+         "display": "Superannuation Funds",
+         "definition": "Superannuation Funds"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "64",
+     "display": "Auxiliary Finance and Insurance Services",
+     "definition": "Auxiliary Finance and Insurance Services",
+     "concept": [
+      {
+       "code": "641",
+       "display": "Auxiliary Finance and Investment Services",
+       "definition": "Auxiliary Finance and Investment Services",
+       "concept": [
+        {
+         "code": "6411",
+         "display": "Financial Asset Broking Services",
+         "definition": "Financial Asset Broking Services"
+        },
+        {
+         "code": "6419",
+         "display": "Other Auxiliary Finance and Investment Services",
+         "definition": "Other Auxiliary Finance and Investment Services"
+        }
+       ]
+      },
+      {
+       "code": "642",
+       "display": "Auxiliary Insurance Services",
+       "definition": "Auxiliary Insurance Services",
+       "concept": [
+        {
+         "code": "6420",
+         "display": "Auxiliary Insurance Services",
+         "definition": "Auxiliary Insurance Services"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "L",
+   "display": "Rental, Hiring and Real Estate Services",
+   "definition": "Rental, Hiring and Real Estate Services",
+   "concept": [
+    {
+     "code": "66",
+     "display": "Rental and Hiring Services (except Real Estate)",
+     "definition": "Rental and Hiring Services (except Real Estate)",
+     "concept": [
+      {
+       "code": "661",
+       "display": "Motor Vehicle and Transport Equipment Rental and Hiring",
+       "definition": "Motor Vehicle and Transport Equipment Rental and Hiring",
+       "concept": [
+        {
+         "code": "6611",
+         "display": "Passenger Car Rental and Hiring",
+         "definition": "Passenger Car Rental and Hiring"
+        },
+        {
+         "code": "6619",
+         "display": "Other Motor Vehicle and Transport Equipment Rental and Hiring",
+         "definition": "Other Motor Vehicle and Transport Equipment Rental and Hiring"
+        }
+       ]
+      },
+      {
+       "code": "662",
+       "display": "Farm Animal and Bloodstock Leasing",
+       "definition": "Farm Animal and Bloodstock Leasing",
+       "concept": [
+        {
+         "code": "6620",
+         "display": "Farm Animal and Bloodstock Leasing",
+         "definition": "Farm Animal and Bloodstock Leasing"
+        }
+       ]
+      },
+      {
+       "code": "663",
+       "display": "Other Goods and Equipment Rental and Hiring",
+       "definition": "Other Goods and Equipment Rental and Hiring",
+       "concept": [
+        {
+         "code": "6631",
+         "display": "Heavy Machinery and Scaffolding Rental and Hiring",
+         "definition": "Heavy Machinery and Scaffolding Rental and Hiring"
+        },
+        {
+         "code": "6632",
+         "display": "Video and Other Electronic Media Rental and Hiring",
+         "definition": "Video and Other Electronic Media Rental and Hiring"
+        },
+        {
+         "code": "6639",
+         "display": "Other Goods and Equipment Rental and Hiring n.e.c.",
+         "definition": "Other Goods and Equipment Rental and Hiring n.e.c."
+        }
+       ]
+      },
+      {
+       "code": "664",
+       "display": "Non-Financial Intangible Assets (Except Copyrights) Leasing",
+       "definition": "Non-Financial Intangible Assets (Except Copyrights) Leasing",
+       "concept": [
+        {
+         "code": "6640",
+         "display": "Non-Financial Intangible Assets (Except Copyrights) Leasing",
+         "definition": "Non-Financial Intangible Assets (Except Copyrights) Leasing"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "67",
+     "display": "Property Operators and Real Estate Services",
+     "definition": "Property Operators and Real Estate Services",
+     "concept": [
+      {
+       "code": "671",
+       "display": "Property Operators",
+       "definition": "Property Operators",
+       "concept": [
+        {
+         "code": "6711",
+         "display": "Residential Property Operators",
+         "definition": "Residential Property Operators"
+        },
+        {
+         "code": "6712",
+         "display": "Non-Residential Property Operators",
+         "definition": "Non-Residential Property Operators"
+        }
+       ]
+      },
+      {
+       "code": "672",
+       "display": "Real Estate Services",
+       "definition": "Real Estate Services",
+       "concept": [
+        {
+         "code": "6720",
+         "display": "Real Estate Services",
+         "definition": "Real Estate Services"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "M",
+   "display": "Professional, Scientific and Technical Services",
+   "definition": "Professional, Scientific and Technical Services",
+   "concept": [
+    {
+     "code": "69",
+     "display": "Professional, Scientific and Technical Services (Except Computer System Design and Related Services)",
+     "definition": "Professional, Scientific and Technical Services (Except Computer System Design and Related Services)",
+     "concept": [
+      {
+       "code": "691",
+       "display": "Scientific Research Services",
+       "definition": "Scientific Research Services",
+       "concept": [
+        {
+         "code": "6910",
+         "display": "Scientific Research Services",
+         "definition": "Scientific Research Services"
+        }
+       ]
+      },
+      {
+       "code": "692",
+       "display": "Architectural, Engineering and Technical Services",
+       "definition": "Architectural, Engineering and Technical Services",
+       "concept": [
+        {
+         "code": "6921",
+         "display": "Architectural Services",
+         "definition": "Architectural Services"
+        },
+        {
+         "code": "6922",
+         "display": "Surveying and Mapping Services",
+         "definition": "Surveying and Mapping Services"
+        },
+        {
+         "code": "6923",
+         "display": "Engineering Design and Engineering Consulting Services",
+         "definition": "Engineering Design and Engineering Consulting Services"
+        },
+        {
+         "code": "6924",
+         "display": "Other Specialised Design Services",
+         "definition": "Other Specialised Design Services"
+        },
+        {
+         "code": "6925",
+         "display": "Scientific Testing and Analysis Services",
+         "definition": "Scientific Testing and Analysis Services"
+        }
+       ]
+      },
+      {
+       "code": "693",
+       "display": "Legal and Accounting Services",
+       "definition": "Legal and Accounting Services",
+       "concept": [
+        {
+         "code": "6931",
+         "display": "Legal Services",
+         "definition": "Legal Services"
+        },
+        {
+         "code": "6932",
+         "display": "Accounting Services",
+         "definition": "Accounting Services"
+        }
+       ]
+      },
+      {
+       "code": "694",
+       "display": "Advertising Services",
+       "definition": "Advertising Services",
+       "concept": [
+        {
+         "code": "6940",
+         "display": "Advertising Services",
+         "definition": "Advertising Services"
+        }
+       ]
+      },
+      {
+       "code": "695",
+       "display": "Market Research and Statistical Services",
+       "definition": "Market Research and Statistical Services",
+       "concept": [
+        {
+         "code": "6950",
+         "display": "Market Research and Statistical Services",
+         "definition": "Market Research and Statistical Services"
+        }
+       ]
+      },
+      {
+       "code": "696",
+       "display": "Management and Related Consulting Services",
+       "definition": "Management and Related Consulting Services",
+       "concept": [
+        {
+         "code": "6961",
+         "display": "Corporate Head Office Management Services",
+         "definition": "Corporate Head Office Management Services"
+        },
+        {
+         "code": "6962",
+         "display": "Management Advice and Related Consulting Services",
+         "definition": "Management Advice and Related Consulting Services"
+        }
+       ]
+      },
+      {
+       "code": "697",
+       "display": "Veterinary Services",
+       "definition": "Veterinary Services",
+       "concept": [
+        {
+         "code": "6970",
+         "display": "Veterinary Services",
+         "definition": "Veterinary Services"
+        }
+       ]
+      },
+      {
+       "code": "699",
+       "display": "Other Professional, Scientific and Technical Services",
+       "definition": "Other Professional, Scientific and Technical Services",
+       "concept": [
+        {
+         "code": "6991",
+         "display": "Professional Photographic Services",
+         "definition": "Professional Photographic Services"
+        },
+        {
+         "code": "6999",
+         "display": "Other Professional, Scientific and Technical Services n.e.c.",
+         "definition": "Other Professional, Scientific and Technical Services n.e.c."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "70",
+     "display": "Computer System Design and Related Services",
+     "definition": "Computer System Design and Related Services",
+     "concept": [
+      {
+       "code": "700",
+       "display": "Computer System Design and Related Services",
+       "definition": "Computer System Design and Related Services",
+       "concept": [
+        {
+         "code": "7000",
+         "display": "Computer System Design and Related Services",
+         "definition": "Computer System Design and Related Services"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "N",
+   "display": "Administrative and Support Services",
+   "definition": "Administrative and Support Services",
+   "concept": [
+    {
+     "code": "72",
+     "display": "Administrative Services",
+     "definition": "Administrative Services",
+     "concept": [
+      {
+       "code": "721",
+       "display": "Employment Services",
+       "definition": "Employment Services",
+       "concept": [
+        {
+         "code": "7211",
+         "display": "Employment Placement and Recruitment Services",
+         "definition": "Employment Placement and Recruitment Services"
+        },
+        {
+         "code": "7212",
+         "display": "Labour Supply Services",
+         "definition": "Labour Supply Services"
+        }
+       ]
+      },
+      {
+       "code": "722",
+       "display": "Travel Agency and Tour Arrangement Services",
+       "definition": "Travel Agency and Tour Arrangement Services",
+       "concept": [
+        {
+         "code": "7220",
+         "display": "Travel Agency and Tour Arrangement Services",
+         "definition": "Travel Agency and Tour Arrangement Services"
+        }
+       ]
+      },
+      {
+       "code": "729",
+       "display": "Other Administrative Services",
+       "definition": "Other Administrative Services",
+       "concept": [
+        {
+         "code": "7291",
+         "display": "Office Administrative Services",
+         "definition": "Office Administrative Services"
+        },
+        {
+         "code": "7292",
+         "display": "Document Preparation Services",
+         "definition": "Document Preparation Services"
+        },
+        {
+         "code": "7293",
+         "display": "Credit Reporting and Debt Collection Services",
+         "definition": "Credit Reporting and Debt Collection Services"
+        },
+        {
+         "code": "7294",
+         "display": "Call Centre Operation",
+         "definition": "Call Centre Operation"
+        },
+        {
+         "code": "7299",
+         "display": "Other Administrative Services n.e.c.",
+         "definition": "Other Administrative Services n.e.c."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "73",
+     "display": "Building Cleaning, Pest Control and Other Support Services",
+     "definition": "Building Cleaning, Pest Control and Other Support Services",
+     "concept": [
+      {
+       "code": "731",
+       "display": "Building Cleaning, Pest Control and Gardening Services",
+       "definition": "Building Cleaning, Pest Control and Gardening Services",
+       "concept": [
+        {
+         "code": "7311",
+         "display": "Building and Other Industrial Cleaning Services",
+         "definition": "Building and Other Industrial Cleaning Services"
+        },
+        {
+         "code": "7312",
+         "display": "Building Pest Control Services",
+         "definition": "Building Pest Control Services"
+        },
+        {
+         "code": "7313",
+         "display": "Gardening Services",
+         "definition": "Gardening Services"
+        }
+       ]
+      },
+      {
+       "code": "732",
+       "display": "Packaging Services",
+       "definition": "Packaging Services",
+       "concept": [
+        {
+         "code": "7320",
+         "display": "Packaging Services",
+         "definition": "Packaging Services"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "O",
+   "display": "Public Administration and Safety",
+   "definition": "Public Administration and Safety",
+   "concept": [
+    {
+     "code": "75",
+     "display": "Public Administration",
+     "definition": "Public Administration",
+     "concept": [
+      {
+       "code": "751",
+       "display": "Central Government Administration",
+       "definition": "Central Government Administration",
+       "concept": [
+        {
+         "code": "7510",
+         "display": "Central Government Administration",
+         "definition": "Central Government Administration"
+        }
+       ]
+      },
+      {
+       "code": "752",
+       "display": "State Government Administration",
+       "definition": "State Government Administration",
+       "concept": [
+        {
+         "code": "7520",
+         "display": "State Government Administration",
+         "definition": "State Government Administration"
+        }
+       ]
+      },
+      {
+       "code": "753",
+       "display": "Local Government Administration",
+       "definition": "Local Government Administration",
+       "concept": [
+        {
+         "code": "7530",
+         "display": "Local Government Administration",
+         "definition": "Local Government Administration"
+        }
+       ]
+      },
+      {
+       "code": "754",
+       "display": "Justice",
+       "definition": "Justice",
+       "concept": [
+        {
+         "code": "7540",
+         "display": "Justice",
+         "definition": "Justice"
+        }
+       ]
+      },
+      {
+       "code": "755",
+       "display": "Government Representation",
+       "definition": "Government Representation",
+       "concept": [
+        {
+         "code": "7551",
+         "display": "Domestic Government Representation",
+         "definition": "Domestic Government Representation"
+        },
+        {
+         "code": "7552",
+         "display": "Foreign Government Representation",
+         "definition": "Foreign Government Representation"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "76",
+     "display": "Defence",
+     "definition": "Defence",
+     "concept": [
+      {
+       "code": "760",
+       "display": "Defence",
+       "definition": "Defence",
+       "concept": [
+        {
+         "code": "7600",
+         "display": "Defence",
+         "definition": "Defence"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "77",
+     "display": "Public Order, Safety and Regulatory Services",
+     "definition": "Public Order, Safety and Regulatory Services",
+     "concept": [
+      {
+       "code": "771",
+       "display": "Public Order and Safety Services",
+       "definition": "Public Order and Safety Services",
+       "concept": [
+        {
+         "code": "7711",
+         "display": "Police Services",
+         "definition": "Police Services"
+        },
+        {
+         "code": "7712",
+         "display": "Investigation and Security Services",
+         "definition": "Investigation and Security Services"
+        },
+        {
+         "code": "7713",
+         "display": "Fire Protection and Other Emergency Services",
+         "definition": "Fire Protection and Other Emergency Services"
+        },
+        {
+         "code": "7714",
+         "display": "Correctional and Detention Services",
+         "definition": "Correctional and Detention Services"
+        },
+        {
+         "code": "7719",
+         "display": "Other Public Order and Safety Services",
+         "definition": "Other Public Order and Safety Services"
+        }
+       ]
+      },
+      {
+       "code": "772",
+       "display": "Regulatory Services",
+       "definition": "Regulatory Services",
+       "concept": [
+        {
+         "code": "7720",
+         "display": "Regulatory Services",
+         "definition": "Regulatory Services"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "P",
+   "display": "Education and Training",
+   "definition": "Education and Training",
+   "concept": [
+    {
+     "code": "80",
+     "display": "Preschool and School Education",
+     "definition": "Preschool and School Education",
+     "concept": [
+      {
+       "code": "801",
+       "display": "Preschool Education",
+       "definition": "Preschool Education",
+       "concept": [
+        {
+         "code": "8010",
+         "display": "Preschool Education",
+         "definition": "Preschool Education"
+        }
+       ]
+      },
+      {
+       "code": "802",
+       "display": "School Education",
+       "definition": "School Education",
+       "concept": [
+        {
+         "code": "8021",
+         "display": "Primary Education",
+         "definition": "Primary Education"
+        },
+        {
+         "code": "8022",
+         "display": "Secondary Education",
+         "definition": "Secondary Education"
+        },
+        {
+         "code": "8023",
+         "display": "Combined Primary and Secondary Education",
+         "definition": "Combined Primary and Secondary Education"
+        },
+        {
+         "code": "8024",
+         "display": "Special School Education",
+         "definition": "Special School Education"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "81",
+     "display": "Tertiary Education",
+     "definition": "Tertiary Education",
+     "concept": [
+      {
+       "code": "810",
+       "display": "Tertiary Education",
+       "definition": "Tertiary Education",
+       "concept": [
+        {
+         "code": "8101",
+         "display": "Technical and Vocational Education and Training",
+         "definition": "Technical and Vocational Education and Training"
+        },
+        {
+         "code": "8102",
+         "display": "Higher Education",
+         "definition": "Higher Education"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "82",
+     "display": "Adult, Community and Other Education",
+     "definition": "Adult, Community and Other Education",
+     "concept": [
+      {
+       "code": "821",
+       "display": "Adult, Community and Other Education",
+       "definition": "Adult, Community and Other Education",
+       "concept": [
+        {
+         "code": "8211",
+         "display": "Sports and Physical Recreation Instruction",
+         "definition": "Sports and Physical Recreation Instruction"
+        },
+        {
+         "code": "8212",
+         "display": "Arts Education",
+         "definition": "Arts Education"
+        },
+        {
+         "code": "8219",
+         "display": "Adult, Community and Other Education n.e.c.",
+         "definition": "Adult, Community and Other Education n.e.c."
+        }
+       ]
+      },
+      {
+       "code": "822",
+       "display": "Educational Support Services",
+       "definition": "Educational Support Services",
+       "concept": [
+        {
+         "code": "8220",
+         "display": "Educational Support Services",
+         "definition": "Educational Support Services"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "Q",
+   "display": "Health Care and Social Assistance",
+   "definition": "Health Care and Social Assistance",
+   "concept": [
+    {
+     "code": "84",
+     "display": "Hospitals",
+     "definition": "Hospitals",
+     "concept": [
+      {
+       "code": "840",
+       "display": "Hospitals",
+       "definition": "Hospitals",
+       "concept": [
+        {
+         "code": "8401",
+         "display": "Hospitals (Except Psychiatric Hospitals)",
+         "definition": "Hospitals (Except Psychiatric Hospitals)"
+        },
+        {
+         "code": "8402",
+         "display": "Psychiatric Hospitals",
+         "definition": "Psychiatric Hospitals"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "85",
+     "display": "Medical and Other Health Care Services",
+     "definition": "Medical and Other Health Care Services",
+     "concept": [
+      {
+       "code": "851",
+       "display": "Medical Services",
+       "definition": "Medical Services",
+       "concept": [
+        {
+         "code": "8511",
+         "display": "General Practice Medical Services",
+         "definition": "General Practice Medical Services"
+        },
+        {
+         "code": "8512",
+         "display": "Specialist Medical Services",
+         "definition": "Specialist Medical Services"
+        }
+       ]
+      },
+      {
+       "code": "852",
+       "display": "Pathology and Diagnostic Imaging Services",
+       "definition": "Pathology and Diagnostic Imaging Services",
+       "concept": [
+        {
+         "code": "8520",
+         "display": "Pathology and Diagnostic Imaging Services",
+         "definition": "Pathology and Diagnostic Imaging Services"
+        }
+       ]
+      },
+      {
+       "code": "853",
+       "display": "Allied Health Services",
+       "definition": "Allied Health Services",
+       "concept": [
+        {
+         "code": "8531",
+         "display": "Dental Services",
+         "definition": "Dental Services"
+        },
+        {
+         "code": "8532",
+         "display": "Optometry and Optical Dispensing",
+         "definition": "Optometry and Optical Dispensing"
+        },
+        {
+         "code": "8533",
+         "display": "Physiotherapy Services",
+         "definition": "Physiotherapy Services"
+        },
+        {
+         "code": "8534",
+         "display": "Chiropractic and Osteopathic Services",
+         "definition": "Chiropractic and Osteopathic Services"
+        },
+        {
+         "code": "8539",
+         "display": "Other Allied Health Services",
+         "definition": "Other Allied Health Services"
+        }
+       ]
+      },
+      {
+       "code": "859",
+       "display": "Other Health Care Services",
+       "definition": "Other Health Care Services",
+       "concept": [
+        {
+         "code": "8591",
+         "display": "Ambulance Services",
+         "definition": "Ambulance Services"
+        },
+        {
+         "code": "8599",
+         "display": "Other Health Care Services n.e.c.",
+         "definition": "Other Health Care Services n.e.c."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "86",
+     "display": "Residential Care Services",
+     "definition": "Residential Care Services",
+     "concept": [
+      {
+       "code": "860",
+       "display": "Residential Care Services",
+       "definition": "Residential Care Services",
+       "concept": [
+        {
+         "code": "8601",
+         "display": "Aged Care Residential Services",
+         "definition": "Aged Care Residential Services"
+        },
+        {
+         "code": "8609",
+         "display": "Other Residential Care Services",
+         "definition": "Other Residential Care Services"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "87",
+     "display": "Social Assistance Services",
+     "definition": "Social Assistance Services",
+     "concept": [
+      {
+       "code": "871",
+       "display": "Child Care Services",
+       "definition": "Child Care Services",
+       "concept": [
+        {
+         "code": "8710",
+         "display": "Child Care Services",
+         "definition": "Child Care Services"
+        }
+       ]
+      },
+      {
+       "code": "879",
+       "display": "Other Social Assistance Services",
+       "definition": "Other Social Assistance Services",
+       "concept": [
+        {
+         "code": "8790",
+         "display": "Other Social Assistance Services",
+         "definition": "Other Social Assistance Services"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "R",
+   "display": "Arts and Recreation Services",
+   "definition": "Arts and Recreation Services",
+   "concept": [
+    {
+     "code": "89",
+     "display": "Heritage Activities",
+     "definition": "Heritage Activities",
+     "concept": [
+      {
+       "code": "891",
+       "display": "Museum Operation",
+       "definition": "Museum Operation",
+       "concept": [
+        {
+         "code": "8910",
+         "display": "Museum Operation",
+         "definition": "Museum Operation"
+        }
+       ]
+      },
+      {
+       "code": "892",
+       "display": "Parks and Gardens Operations",
+       "definition": "Parks and Gardens Operations",
+       "concept": [
+        {
+         "code": "8921",
+         "display": "Zoological and Botanical Gardens Operation",
+         "definition": "Zoological and Botanical Gardens Operation"
+        },
+        {
+         "code": "8922",
+         "display": "Nature Reserves and Conservation Parks Operation",
+         "definition": "Nature Reserves and Conservation Parks Operation"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "90",
+     "display": "Creative and Performing Arts Activities",
+     "definition": "Creative and Performing Arts Activities",
+     "concept": [
+      {
+       "code": "900",
+       "display": "Creative and Performing Arts Activities",
+       "definition": "Creative and Performing Arts Activities",
+       "concept": [
+        {
+         "code": "9001",
+         "display": "Performing Arts Operation",
+         "definition": "Performing Arts Operation"
+        },
+        {
+         "code": "9002",
+         "display": "Creative Artists, Musicians, Writers and Performers",
+         "definition": "Creative Artists, Musicians, Writers and Performers"
+        },
+        {
+         "code": "9003",
+         "display": "Performing Arts Venue Operation",
+         "definition": "Performing Arts Venue Operation"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "91",
+     "display": "Sports and Recreation Activities",
+     "definition": "Sports and Recreation Activities",
+     "concept": [
+      {
+       "code": "911",
+       "display": "Sports and Physical Recreation Activities",
+       "definition": "Sports and Physical Recreation Activities",
+       "concept": [
+        {
+         "code": "9111",
+         "display": "Health and Fitness Centres and Gymnasia Operation",
+         "definition": "Health and Fitness Centres and Gymnasia Operation"
+        },
+        {
+         "code": "9112",
+         "display": "Sports and Physical Recreation Clubs and Sports Professionals",
+         "definition": "Sports and Physical Recreation Clubs and Sports Professionals"
+        },
+        {
+         "code": "9113",
+         "display": "Sports and Physical Recreation Venues, Grounds and Facilities Operation",
+         "definition": "Sports and Physical Recreation Venues, Grounds and Facilities Operation"
+        },
+        {
+         "code": "9114",
+         "display": "Sports and Physical Recreation Administrative Service",
+         "definition": "Sports and Physical Recreation Administrative Service"
+        }
+       ]
+      },
+      {
+       "code": "912",
+       "display": "Horse and Dog Racing Activities",
+       "definition": "Horse and Dog Racing Activities",
+       "concept": [
+        {
+         "code": "9121",
+         "display": "Horse and Dog Racing Administration and Track Operation",
+         "definition": "Horse and Dog Racing Administration and Track Operation"
+        },
+        {
+         "code": "9129",
+         "display": "Other Horse and Dog Racing Activities",
+         "definition": "Other Horse and Dog Racing Activities"
+        }
+       ]
+      },
+      {
+       "code": "913",
+       "display": "Amusement and Other Recreation Activities",
+       "definition": "Amusement and Other Recreation Activities",
+       "concept": [
+        {
+         "code": "9131",
+         "display": "Amusement Parks and Centres Operation",
+         "definition": "Amusement Parks and Centres Operation"
+        },
+        {
+         "code": "9139",
+         "display": "Amusement and Other Recreational Activities n.e.c.",
+         "definition": "Amusement and Other Recreational Activities n.e.c."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "92",
+     "display": "Gambling Activities",
+     "definition": "Gambling Activities",
+     "concept": [
+      {
+       "code": "920",
+       "display": "Gambling Activities",
+       "definition": "Gambling Activities",
+       "concept": [
+        {
+         "code": "9201",
+         "display": "Casino Operation",
+         "definition": "Casino Operation"
+        },
+        {
+         "code": "9202",
+         "display": "Lottery Operation",
+         "definition": "Lottery Operation"
+        },
+        {
+         "code": "9209",
+         "display": "Other Gambling Activities",
+         "definition": "Other Gambling Activities"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "S",
+   "display": "Other Services",
+   "definition": "Other Services",
+   "concept": [
+    {
+     "code": "94",
+     "display": "Repair and Maintenance",
+     "definition": "Repair and Maintenance",
+     "concept": [
+      {
+       "code": "941",
+       "display": "Automotive Repair and Maintenance",
+       "definition": "Automotive Repair and Maintenance",
+       "concept": [
+        {
+         "code": "9411",
+         "display": "Automotive Electrical Services",
+         "definition": "Automotive Electrical Services"
+        },
+        {
+         "code": "9412",
+         "display": "Automotive Body, Paint and Interior Repair",
+         "definition": "Automotive Body, Paint and Interior Repair"
+        },
+        {
+         "code": "9419",
+         "display": "Other Automotive Repair and Maintenance",
+         "definition": "Other Automotive Repair and Maintenance"
+        }
+       ]
+      },
+      {
+       "code": "942",
+       "display": "Machinery and Equipment Repair and Maintenance",
+       "definition": "Machinery and Equipment Repair and Maintenance",
+       "concept": [
+        {
+         "code": "9421",
+         "display": "Domestic Appliance Repair and Maintenance",
+         "definition": "Domestic Appliance Repair and Maintenance"
+        },
+        {
+         "code": "9422",
+         "display": "Electronic (except Domestic Appliance) and Precision Equipment Repair",
+         "definition": "Electronic (except Domestic Appliance) and Precision Equipment Repair"
+        },
+        {
+         "code": "9429",
+         "display": "Other Machinery and Equipment Repair and Maintenance",
+         "definition": "Other Machinery and Equipment Repair and Maintenance"
+        }
+       ]
+      },
+      {
+       "code": "949",
+       "display": "Other Repair and Maintenance",
+       "definition": "Other Repair and Maintenance",
+       "concept": [
+        {
+         "code": "9491",
+         "display": "Clothing and Footwear Repair",
+         "definition": "Clothing and Footwear Repair"
+        },
+        {
+         "code": "9499",
+         "display": "Other Repair and Maintenance n.e.c.",
+         "definition": "Other Repair and Maintenance n.e.c."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "95",
+     "display": "Personal and Other Services",
+     "definition": "Personal and Other Services",
+     "concept": [
+      {
+       "code": "951",
+       "display": "Personal Care Services",
+       "definition": "Personal Care Services",
+       "concept": [
+        {
+         "code": "9511",
+         "display": "Hairdressing and Beauty Services",
+         "definition": "Hairdressing and Beauty Services"
+        },
+        {
+         "code": "9512",
+         "display": "Diet and Weight Reduction Centre Operation",
+         "definition": "Diet and Weight Reduction Centre Operation"
+        }
+       ]
+      },
+      {
+       "code": "952",
+       "display": "Funeral, Crematorium and Cemetery Services",
+       "definition": "Funeral, Crematorium and Cemetery Services",
+       "concept": [
+        {
+         "code": "9520",
+         "display": "Funeral, Crematorium and Cemetery Services",
+         "definition": "Funeral, Crematorium and Cemetery Services"
+        }
+       ]
+      },
+      {
+       "code": "953",
+       "display": "Other Personal Services",
+       "definition": "Other Personal Services",
+       "concept": [
+        {
+         "code": "9531",
+         "display": "Laundry and Dry-Cleaning Services",
+         "definition": "Laundry and Dry-Cleaning Services"
+        },
+        {
+         "code": "9532",
+         "display": "Photographic Film Processing",
+         "definition": "Photographic Film Processing"
+        },
+        {
+         "code": "9533",
+         "display": "Parking Services",
+         "definition": "Parking Services"
+        },
+        {
+         "code": "9534",
+         "display": "Brothel Keeping and Prostitution Services",
+         "definition": "Brothel Keeping and Prostitution Services"
+        },
+        {
+         "code": "9539",
+         "display": "Other Personal Services n.e.c.",
+         "definition": "Other Personal Services n.e.c."
+        }
+       ]
+      },
+      {
+       "code": "954",
+       "display": "Religious Services",
+       "definition": "Religious Services",
+       "concept": [
+        {
+         "code": "9540",
+         "display": "Religious Services",
+         "definition": "Religious Services"
+        }
+       ]
+      },
+      {
+       "code": "955",
+       "display": "Civic, Professional and Other Interest Group Services",
+       "definition": "Civic, Professional and Other Interest Group Services",
+       "concept": [
+        {
+         "code": "9551",
+         "display": "Business and Professional Association Services",
+         "definition": "Business and Professional Association Services"
+        },
+        {
+         "code": "9552",
+         "display": "Labour Association Services",
+         "definition": "Labour Association Services"
+        },
+        {
+         "code": "9559",
+         "display": "Other Interest Group Services n.e.c.",
+         "definition": "Other Interest Group Services n.e.c."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "96",
+     "display": "Private Households Employing Staff and Undifferentiated Goods- and Service-Producing Activities of Households for Own Use",
+     "definition": "Private Households Employing Staff and Undifferentiated Goods- and Service-Producing Activities of Households for Own Use",
+     "concept": [
+      {
+       "code": "960",
+       "display": "Private Households Employing Staff and Undifferentiated Goods- and Service-Producing Activities of Households for Own Use",
+       "definition": "Private Households Employing Staff and Undifferentiated Goods- and Service-Producing Activities of Households for Own Use",
+       "concept": [
+        {
+         "code": "9601",
+         "display": "Private Households Employing Staff",
+         "definition": "Private Households Employing Staff"
+        },
+        {
+         "code": "9602",
+         "display": "Undifferentiated Goods-Producing Activities of Private Households for Own Use",
+         "definition": "Undifferentiated Goods-Producing Activities of Private Households for Own Use"
+        },
+        {
+         "code": "9603",
+         "display": "Undifferentiated Service-Producing Activities of Private Households for Own Use",
+         "definition": "Undifferentiated Service-Producing Activities of Private Households for Own Use"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

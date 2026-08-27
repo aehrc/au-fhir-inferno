@@ -1,0 +1,139 @@
+# Local prototype: can Ontoserver's $validate stand in for the validator-wrapper
+# inside au-fhir-inferno's architecture?
+#
+#   arm A (today)     Inferno -> wrapper:3500 -> onto:8080   (Ontoserver as tx only)
+#   arm B (proposed)  Inferno -> shim:3501    -> onto:8080   (Ontoserver validates)
+#
+# The shim runs on the host (shim.py) so it can be edited without a rebuild; it is a
+# thin proxy and adds one loopback hop to arm B, which arm A also has to the wrapper.
+#
+# CONSTRAINT: ontoserver.validator.engine=new is REQUIRED. The default is 'hapi' and a
+# stock container would measure the OLD engine -- the wrong thing entirely, and silently.
+
+volumes:
+  pgdata:
+  ontodata:
+  ontodata2:
+
+services:
+  db:
+    image: postgres:12
+    container_name: shim-db
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    # DESIGN: an explicitly NAMED volume. Left anonymous (the default when no volume is
+    # declared), `docker compose down` followed by `up` silently attaches a NEW empty
+    # volume -- the stack comes back healthy and every validation quietly answers
+    # differently, because the terminology content is simply gone.
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  onto:
+    image: ${ONTO_IMAGE:?set ONTO_IMAGE -- needs a build carrying the new validation engine; a released tag silently runs the old one}
+    container_name: shim-onto
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "${ONTO_PORT:-8080}:8080"
+    environment:
+      - ONTOSERVER_INSECURE=true
+      - conformance.status=active
+      - spring.datasource.url=jdbc:postgresql://db/postgres
+      - ontoserver.validator.engine=new
+      # CONSTRAINT: org.hl7.fhir.core REFUSES a tx server that does not declare which
+      # tx-tests version it passes ("not approved for use ... too old (test version =
+      # unspecified)"). Default here is 'unknown'; r4 declares 1.9.0, and this is the same
+      # image, so the declaration is accurate rather than cosmetic.
+      # NCTS syndication -- SNOMED CT-AU and LOINC are preloaded, NOT fetched on demand.
+      # DESIGN: preload rather than letting the shim trigger an index build. An RF2 build
+      # is a GB-scale job; triggering it inside a request would land a multi-minute stall
+      # in the middle of the latency measurement the rig exists to take.
+      # Secrets come from your own env file via --env-file; they are
+      # deliberately NOT written into this file.
+      - atom.syndication.feedLocation=https://api.healthterminologies.gov.au/syndication/v1/syndication.xml
+      - authentication.oauth.endpoint.0=https://api.healthterminologies.gov.au
+      - authentication.oauth.endpoint.token_endpoint.0=https://api.healthterminologies.gov.au/oauth2/token
+      - authentication.oauth.endpoint.client_id.0=${NCTS_CLIENT_ID}
+      - authentication.oauth.endpoint.client_secret.0=${NCTS_CLIENT_SECRET}
+      - authentication.oauth.endpoint.strategy.0=basic_auth
+      # NOTE: -D system property, not an env entry. Hyphenated Spring keys do not bind
+      # through dotted env vars (ontoserver.validator.engine does -- it has no hyphens).
+      # org.hl7.fhir.core REFUSES a tx server declaring 'unspecified'. 1.9.0 matches r4.
+      - JAVA_OPTS=-Xmx6G
+      # The image's entrypoint appends its OWN -Dconformance.fhir-test-cases.version=unspecified
+      # AFTER JAVA_OPTS, and the last -D wins -- so JAVA_OPTS cannot set this. SPRING_APPLICATION_JSON
+      # outranks system properties in Spring's precedence order, so it lands.
+      - 'SPRING_APPLICATION_JSON={"conformance":{"fhir-test-cases":{"version":"1.9.0"}}}'
+    volumes:
+      - ontodata:/var/onto
+
+  # TLS front for `onto`, so the wrapper's tx server can be LOCAL. See tls/nginx.conf.
+  tx-tls:
+    image: nginx:alpine
+    container_name: shim-tx-tls
+    depends_on:
+      - onto
+    ports:
+      - "${TX_TLS_PORT:-8443}:8443"
+    volumes:
+      - ./tls/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./tls:/etc/nginx/tls:ro
+
+  # Arm A: the validator-wrapper as au-fhir-inferno runs it, tx pointed at our Ontoserver.
+  wrapper:
+    # DESIGN: this is the image au-fhir-inferno's `validator-api` service actually runs
+    # (their compose.yml), NOT markiantorno's -- which they have commented out. The
+    # baseline arm has to be the thing Kyle would be replacing, or the comparison is
+    # against a validator nobody is using. Digest-pinned because they track a moving
+    # `latest`; this one was built 2025-01-21, so their production validator is that
+    # vintage and lags the current reference validator considerably.
+    # Built from tls/Dockerfile.wrapper: the production image above with the local tx
+    # server's self-signed cert imported into the JDK truststore. This image overrides
+    # Temurin's __cacert_entrypoint.sh, so USE_SYSTEM_CA_CERTS + /certificates is inert
+    # here and the import has to happen at build time.
+    build:
+      context: ./tls
+      dockerfile: Dockerfile.wrapper
+    image: shim-wrapper-trusted:local
+    # Alternative baseline, retained: markiantorno/validator-wrapper:1.0.68
+    container_name: shim-wrapper
+    depends_on:
+      - onto
+      - tx-tls
+    ports:
+      - "3500:3500"
+    environment:
+      - SESSION_CACHE_DURATION=-1
+      - JAVA_OPTS=-Xmx6G
+      # Temurin's entrypoint imports /certificates/*.crt into the JVM truststore when this
+      # is set, so the self-signed tx-tls cert is trusted.
+      - USE_SYSTEM_CA_CERTS=1
+    volumes:
+      - ./tls/tx-tls.crt:/certificates/tx-tls.crt:ro
+
+  # Control arm, RETIRED. Identical image + DB with the engine left at its 'hapi'
+  # default; it existed only to prove the flag on `onto` took (38/38 files differed) and
+  # to derive the dom-6 discriminator now baked into assert-engine.sh. Old-vs-new engine
+  # is explicitly out of scope. Kept here so it is one `up -d onto-hapi` away if a future
+  # build ever breaks that discriminator and it has to be re-derived.
+  onto-hapi:
+    image: ${ONTO_IMAGE:?set ONTO_IMAGE -- needs a build carrying the new validation engine; a released tag silently runs the old one}
+    container_name: shim-onto-hapi
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8081:8080"
+    environment:
+      - ONTOSERVER_INSECURE=true
+      - conformance.status=active
+      - spring.datasource.url=jdbc:postgresql://db/postgres
+      - JAVA_OPTS=-Xmx6G
+    volumes:
+      - ontodata2:/var/onto
